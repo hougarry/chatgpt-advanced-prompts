@@ -1,0 +1,38 @@
+{
+  "name": "fd-slicer2",
+  "version": "1.2.0",
+  "description": "Fork of fd-slicer that fixes the DEP00005 deprecation error",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --check-leaks",
+    "test:coverage": "nyc mocha -- --reporter dot --check-leaks test/test.js"
+  },
+  "author": "Nour Al-Habash <nour35000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "stream-equal": "^1.1.1",
+    "streamsink": "^1.2.0"
+  },
+  "dependencies": {
+    "pend": "^1.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nalhabash/fd-slicer2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nalhabash/fd-slicer2/issues"
+  },
+  "keywords": [
+    "createReadStream",
+    "createWriteStream"
+  ]
+}

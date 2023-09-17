@@ -1,0 +1,56 @@
+{
+  "name": "simplecrawler",
+  "description": "Very straightforward, event driven web crawler. Features a flexible queue interface and a basic cache mechanism with extensible backend.",
+  "version": "1.1.9",
+  "homepage": "https://github.com/simplecrawler/simplecrawler",
+  "author": "Christopher Giffard <christopher.giffard@cgiffard.com>",
+  "maintainers": [
+    "Christopher Giffard <christopher.giffard@cgiffard.com>",
+    "Fredrik Ekelund <fredrik@fredrik.computer>"
+  ],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplecrawler/simplecrawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simplecrawler/simplecrawler/issues"
+  },
+  "keywords": [
+    "simple",
+    "crawler",
+    "spider",
+    "cache",
+    "queue",
+    "simplecrawler",
+    "eventemitter"
+  ],
+  "scripts": {
+    "lint": "eslint example/ lib/ test/",
+    "mocha": "mocha -t 5000 --exit",
+    "test": "npm run lint && npm run mocha",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs --partial jsdoc2md/*.hbs --files lib/*.js > README.md"
+  },
+  "bin": {
+    "crawl": "./lib/cli.js"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "async": "^3.1.0",
+    "iconv-lite": "^0.5.0",
+    "robots-parser": "^2.1.1",
+    "urijs": "^1.19.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.5.1",
+    "jsdoc-to-markdown": "^5.0.1",
+    "mocha": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "lib"
+  ]
+}

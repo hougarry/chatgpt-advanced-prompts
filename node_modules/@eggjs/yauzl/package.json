@@ -1,0 +1,44 @@
+{
+  "name": "@eggjs/yauzl",
+  "version": "2.11.0",
+  "description": "yet another unzip library for node",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo 'ignore lint'",
+    "test": "node --trace-deprecation test/test.js",
+    "ci": "istanbul cover --report lcovonly test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-modules/yauzl.git"
+  },
+  "keywords": [
+    "unzip",
+    "zip",
+    "stream",
+    "archive",
+    "file"
+  ],
+  "author": "Josh Wolfe <thejoshwolfe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-modules/yauzl/issues"
+  },
+  "homepage": "https://github.com/node-modules/yauzl",
+  "dependencies": {
+    "buffer-crc32": "~0.2.3",
+    "fd-slicer2": "^1.2.0"
+  },
+  "devDependencies": {
+    "bl": "~1.0.0",
+    "istanbul": "~0.3.4",
+    "pend": "~1.2.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
