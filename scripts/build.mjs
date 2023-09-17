@@ -140,7 +140,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
  * Ensures that the directory exists.
  * @param {String} pathArr
  */
- function createDataJSON(pathArr) {
+function createDataJSON(pathArr) {
   return new Promise((resolve, reject) => {
     try {
       const commandData = {};
@@ -149,24 +149,34 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
         const json = {}
         const con = FS.readFileSync(mdPath);
         const str = con.toString();
-        let title = str.match(/[^===]+(?=[===])/g);
-        title = title[0] ? title[0].replace(/\n/g, '') : title[0];
-        title = title.replace(/\r/, '')
-        // 命令名称
+        let title;
+
+        // Try to match the title based on the existing format
+        const titleMatch = str.match(/[^===]+(?=[===])/g);
+        if (titleMatch && titleMatch[0]) {
+          title = titleMatch[0].replace(/\n/g, '').replace(/\r/, '');
+        } else {
+          // If the title doesn't match the expected format, use the file name as the title
+          title = path.basename(mdPath, '.md');
+        }
+
+        // Command or Prompt Name
         json["n"] = title;
-        // 命令路径
+        // Command or Prompt Path
         json["p"] = `/${path.basename(mdPath, '.md').replace(/\\/g, '/')}`;
-        // 命令描述
+
+        // Command or Prompt Description
         let des = str.match(/\n==={1,}([\s\S]*?)##/i);
         if (!des) {
-          throw `格式错误: ${mdPath}`;
+          throw `Invalid format: ${mdPath}`;
         }
         des = des[1] ? des[1].replace(/\n/g, '') : des[1];
         des = des.replace(/\r/g, '')
         json["d"] = des;
+
         indexes.push(json);
         commandData[title] = json;
-      })
+      });
       resolve({
         json: commandData,
         data: indexes
@@ -176,6 +186,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
     }
   });
 }
+
 
 /**
  * @param {String} fromPath ejs path
