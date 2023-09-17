@@ -13,5 +13,10 @@
       "n": "accept",
       "p": "/accept",
       "d": "指示打印系统接受发往指定目标打印机的打印任务"
+    },
+    "developerbrainstorm": {
+      "n": "developerbrainstorm",
+      "p": "/developerbrainstorm",
+      "d": "开发者头脑风暴模式-生成项目，探讨问题，解决问题，提出解决方案，讨论解决方案，最终确定解决方案。"
     }
 }
