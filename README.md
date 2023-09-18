@@ -1,22 +1,23 @@
 <p align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo" width="100">
+    <img src="./template/img/logo.svg" alt="Logo" width="80">
   </a>
 </p>
 <h1 align="center"> 🌟 ChatGPT 高级 Prompts 数据库 🌟</h1>
 <p align="center">
-    <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
-    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
+  <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
-    </a>
-    <a href="https://blog.garyhou2023.info">
+  </a>
+  <a href="https://blog.garyhou2023.info">
     <img alt="Blog" src="https://img.shields.io/badge/Blog-Myblog-purple">
-    </a>
-    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
+  </a>
+  <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
     <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
-    </a>
-    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
-    </a>
+  </a>
+  <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
 </p>
 
 
