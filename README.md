@@ -4,10 +4,10 @@
   </a>
 </p>
 
-<h1 align="center"># 🌟 ChatGPT 高级 Prompt 仓库 🌟</h1>
+<h1 align="center"># 🌟 ChatGPT 高级 Prompt 数据库 🌟</h1>
 
 <p align="center">
-  <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
+  <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
 </p>
 
 <p align="center">
@@ -53,7 +53,7 @@
 
 - 📚 **40+** ChatGPT 高级命令
 - 🌐 生成了一个无广告的 web 网站，方便使用
-
+- 🛄 资源来自: Discord/Reddit/Youtube/Github等
 
 ## 📚 内容
 
