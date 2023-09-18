@@ -17,23 +17,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
-    <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
-  </a>
-  <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
-    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
-  </a>
-  <a href="https://blog.garyhou2023.info">
+    </a>
+    <a href="https://blog.garyhou2023.info">
     <img alt="Blog" src="https://img.shields.io/badge/Blog-Myblog-purple">
-  </a>
+    </a>
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
+    <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
+    </a>
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
+    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
+    </a>
 </p>
-
 
 This repository is your go-to resource for advanced GPT-4 prompts. Whether you're a researcher, developer, or enthusiast, here you'll find comprehensive guides, explanations, and examples to elevate your GPT-4 experience. 
 
