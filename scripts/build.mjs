@@ -49,8 +49,8 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'index.html'),
       {
         p: '/index.html',
-        n: 'GPT-prompt-pro searching engine',
-        d: '最专业的GPT高级命令大全，值得收藏的GPT高级命令速查手册。',
+        n: 'ChatGPT-advanced-prompts searching database',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         command_length: jsonData.data.length
       }
     );

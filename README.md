@@ -12,7 +12,7 @@
 
 <p align="center">
   <em>
-    "A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
+    "A GitHub repository dedicated to advanced usage and prompts for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
   </em>
 </p>
 
