@@ -7,7 +7,7 @@
 <h1 align="center"># 🌟 ChatGPT-Advanced-Prompts 🌟</h1>
 
 <p align="center">
-  <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
+  <strong>English</strong> | <a href="./readme.md"><strong>中文</strong></a>
 </p>
 
 <p align="center">
