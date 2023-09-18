@@ -3,8 +3,6 @@ Prompt-God-Mod-命令上帝模式
 
 Prompt-God-Mod-命令上帝模式,智能生成命令,帮助你提升命令细节，让你的命令更加完美 【7k点赞】
 
-
-
 ## From: https://www.reddit.com/r/ChatGPT/comments/14d7pfz/become_god_like_prompt_engineer_with_this_one/
 
 ## Prompt: 
