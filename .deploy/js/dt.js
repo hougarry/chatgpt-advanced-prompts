@@ -1,0 +1,1 @@
+var linux_commands=[{"n":"7z","p":"/7z","d":"拥有极高压缩比的开源压缩软件。"},{"n":"ab","p":"/ab","d":"Apache服务器的性能测试工具"},{"n":"accept","p":"/accept","d":"指示打印系统接受发往指定目标打印机的打印任务"},{"n":"developerbrainstorm","p":"/developerbrainstorm","d":""}]

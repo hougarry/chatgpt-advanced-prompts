@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="description" content="ab:Apache服务器的性能测试工具 - 最专业的GPT高级命令大全，值得收藏的GPT高级命令速查手册。">
+    <meta name="keywords" content="chatgpt,advanced-prompt,prompt,ai,ab,Apache服务器的性能测试工具">
+    <title>abprompt,chatgpt ab prompt：Apache服务器的性能测试工具 -  GPT高级命令搜索引擎</title>
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/index.css?v=1695011774960">
+    <script src="../js/dark-mode.min.js"></script>
+    <script type="module" src="../js/github-corners.js"></script>
+</head>
+<body>
+<dark-mode permanent dark="Dark" light="Light" style="position: fixed;left: 10px;top: 8px; z-index: 999;"></dark-mode>
+<github-corners target="__blank" z-index="999" position="fixed" href="https://github.com/hougarry/chatgpt-advanced-prompts"></github-corners>
+<div class="header header_list">
+  <div class="header_inner">
+      <div class="logo">
+          <a href="/">
+            <svg height="133px" width="133px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-309.39 -309.39 1125.98 1125.98" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="3.0431999999999997"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(7.608000000000004,7.608000000000004), scale(0.97)"><path transform="translate(-309.39, -309.39), scale(70.37375)" fill="#7ed0ec" d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z" strokewidth="0"></path></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#159d0b;" d="M413.6,172.8c0,140.8-76,290.4-160,290.4s-160-148.8-160-290.4S170.4,0,253.6,0S413.6,32,413.6,172.8 z"></path> <path style="fill:#0b8423;" d="M253.6,0c83.2,0,160,32,160,172.8s-76,290.4-160,290.4s-160-148.8-160-290.4"></path> <path style="fill:#2d003d;" d="M253.6,0c83.2,0,160,32,160,172.8s-76,290.4-160,290.4"></path> <path style="fill:#022708;" d="M216,80c0,13.6-11.2,35.2-25.6,35.2c-13.6,0-25.6-20.8-25.6-35.2c0-13.6,11.2-25.6,25.6-25.6 C204,54.4,216,65.6,216,80z"></path> <circle style="fill:#00ff33;" cx="190.4" cy="80" r="25.6"></circle> <path style="fill:#19da16;" d="M172,61.6c9.6-9.6,25.6-9.6,36,0c9.6,9.6,9.6,25.6,0,36"></path> <circle style="fill:#00ff33;" cx="190.4" cy="80" r="14.4"></circle> <path style="fill:#19da16;" d="M190.4,94.4c-8,0-14.4-6.4-14.4-14.4s6.4-14.4,14.4-14.4"></path> <g> <circle style="fill:#EBFFFD;" cx="179.2" cy="68.8" r="8.8"></circle> <circle style="fill:#EBFFFD;" cx="204.8" cy="92.8" r="4"></circle> </g> <path style="fill:#0b8423;" d="M342.4,80c0,13.6-11.2,35.2-25.6,35.2c-13.6,0-25.6-20.8-25.6-35.2c0-13.6,11.2-25.6,25.6-25.6 C331.2,54.4,342.4,65.6,342.4,80z"></path> <circle style="fill:#00ff33;" cx="316.8" cy="80" r="25.6"></circle> <path style="fill:#19da16;" d="M299.2,61.6c9.6-9.6,25.6-9.6,36,0c9.6,9.6,9.6,25.6,0,36"></path> <circle style="fill:#00ff33;" cx="316.8" cy="80" r="14.4"></circle> <path style="fill:#19da16;" d="M316.8,94.4c-8,0-14.4-6.4-14.4-14.4s6.4-14.4,14.4-14.4"></path> <g> <circle style="fill:#EBFFFD;" cx="305.6" cy="68.8" r="8.8"></circle> <circle style="fill:#EBFFFD;" cx="331.2" cy="92.8" r="4"></circle> </g> <ellipse style="fill:#91C6C2;" cx="253.6" cy="495.2" rx="104" ry="12"></ellipse> <path style="fill:#00ff33;" d="M191.2,141.6l-33.6-40l0,0H96c-0.8,8-1.6,16-1.6,16h56.8l38.4,40l0,0l0,0h56v-16H191.2z"></path> <polyline style="fill:#19da16;" points="93.6,117.6 151.2,117.6 189.6,157.6 189.6,157.6 189.6,157.6 245.6,157.6 245.6,152.8 190.4,148 157.6,109.6 157.6,109.6 "></polyline> <path style="fill:#00ff33;" d="M316,141.6l33.6-40l0,0h61.6c0.8,8,1.6,16,1.6,16H356l-38.4,40l0,0l0,0h-56v-16H316z"></path> <polyline style="fill:#19da16;" points="413.6,117.6 356,117.6 317.6,157.6 317.6,157.6 317.6,157.6 261.6,157.6 261.6,152.8 316.8,148 349.6,109.6 349.6,109.6 "></polyline> <circle style="fill:#00ff33;" cx="253.6" cy="147.2" r="16"></circle> <path style="fill:#19da16;" d="M269.6,147.2c0,8.8-7.2,16-16,16s-16-7.2-16-16"></path> <path style="fill:#159d0b;" d="M94.4,173.6l-0.8-1.6c0,0.8-0.8,0.8-0.8,1.6c0,93.6,32,188.8,80,243.2v-216l-29.6-27.2H94.4z"></path> <path style="fill:#2d003d;" d="M94.4,168l-0.8,1.6c0,0.8-0.8,2.4-0.8,3.2c0,93.6,32,190.4,80,244.8v-220"></path> <path style="fill:#159d0b;" d="M412,173.6l0.8-1.6c0,0.8,0.8,0.8,0.8,1.6c0,93.6-32,184.8-80,240V200.8l29.6-27.2H412z"></path> <path style="fill:#02405B;" d="M412.8,168v1.6c0,0.8,0.8,2.4,0.8,3.2c0,93.6-32,190.4-80,244.8v-220"></path> <circle style="fill:#0b8423;" cx="50.4" cy="304.8" r="40.8"></circle> <g> <path style="fill:#2d003d;" d="M50.4,264.8c22.4,0,40.8,18.4,40.8,40.8s-18.4,40.8-40.8,40.8"></path> <circle style="fill:#2d003d;" cx="50.4" cy="247.2" r="9.6"></circle> </g> <polyline style="fill:#19da16;" points="53.6,237.6 53.6,197.6 77.6,197.6 77.6,165.6 93.6,165.6 "></polyline> <ellipse transform="matrix(-0.0789 -0.9969 0.9969 -0.0789 -103.6292 323.4209)" style="fill:#159d0b;" cx="97.595" cy="209.584" rx="40.001" ry="13.6"></ellipse> <ellipse transform="matrix(-0.0788 -0.9969 0.9969 -0.0788 -108.8679 318.6161)" style="fill:#0b8423;" cx="92.778" cy="209.609" rx="24" ry="5.6"></ellipse> <g> <circle style="fill:#19da16;" cx="127.2" cy="211.2" r="3.2"></circle> <circle style="fill:#19da16;" cx="140" cy="207.2" r="3.2"></circle> <circle style="fill:#19da16;" cx="152.8" cy="204" r="3.2"></circle> </g> <path style="fill:#00ff33;" d="M69.6,313.6c0,2.4-1.6,4-4,4h-32c-2.4,0-4-1.6-4-4l0,0c0-2.4,1.6-4,4-4h32 C68,309.6,69.6,311.2,69.6,313.6L69.6,313.6z"></path> <circle style="fill:#0b8423;" cx="456.8" cy="304.8" r="40.8"></circle> <g> <path style="fill:#2d003d;" d="M456.8,264.8c-22.4,0-40.8,18.4-40.8,40.8s18.4,40.8,40.8,40.8"></path> <circle style="fill:#2d003d;" cx="456.8" cy="247.2" r="9.6"></circle> </g> <polyline style="fill:#19da16;" points="453.6,237.6 453.6,197.6 429.6,197.6 429.6,165.6 413.6,165.6 "></polyline> <ellipse transform="matrix(-0.0789 0.9969 -0.9969 -0.0789 651.5395 -182.3609)" style="fill:#159d0b;" cx="410.015" cy="209.81" rx="40.001" ry="13.6"></ellipse> <ellipse transform="matrix(-0.0788 0.9969 -0.9969 -0.0788 656.439 -186.1716)" style="fill:#0b8423;" cx="414.238" cy="210.213" rx="24" ry="5.6"></ellipse> <g> <circle style="fill:#19da16;" cx="380" cy="211.2" r="3.2"></circle> <circle style="fill:#19da16;" cx="367.2" cy="207.2" r="3.2"></circle> <circle style="fill:#19da16;" cx="354.4" cy="204" r="3.2"></circle> </g> <path style="fill:#00ff33;" d="M477.6,313.6c0-2.4-1.6-4-4-4h-32c-2.4,0-4,1.6-4,4l0,0c0,2.4,1.6,4,4,4h32 C476,317.6,477.6,316,477.6,313.6L477.6,313.6z"></path> </g></svg>
+          </a>
+      </div>
+      <div class="search">
+          <ul class="search-list" id="result">
+            <!-- <li><a href="#"><strong>find</strong> - 指定目录下查找文件。</a></li> -->
+          </ul>
+          <input type="text" class="query" id="query" autocomplete="off" autofocus="autofocus" placeholder="GPT-advanced-promt-search"/>
+          <div class="enter-input">
+              <input type="hidden" id="current_path" value="D:\做个码农\编程\chatgpt-advanced-proompts\.deploy\c\ab.html">
+              <button id="search_btn">搜索</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="../js/copy-to-clipboard.js"></script>
+
+<div class="markdown-body">
+
+<span class="edit_btn">
+<a target="_blank" href="https://github.com/hougarry/chatgpt-advanced-prompts/edit/master/command/ab.md">Prompt错误/失效/提升</a> 
+<span class="split"></span>
+<a target="_blank" href="https://github.com/hougarry/chatgpt-advanced-prompts/edit/master/command/ab.md">添加新Prompt</a>
+</span>
+
+
+<dark-mode style="position: fixed; top: 8px; left: 10px; z-index: 999;;display: none;" dark="Dark" light="Light"></dark-mode><script>const t=document;const e="_dark_mode_theme_";const s="permanent";const o="colorschemechange";const i="permanentcolorscheme";const h="light";const r="dark";const n=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){const t=this.getAttribute(e);return t===null?"":t},set(t){this.setAttribute(e,t)}})};const c=(t,e,s=e)=>{Object.defineProperty(t,s,{enumerable:true,get(){return this.hasAttribute(e)},set(t){if(t){this.setAttribute(e,"")}else{this.removeAttribute(e)}}})};class a extends HTMLElement{static get observedAttributes(){return["mode",h,r,s]}LOCAL_NANE=e;constructor(){super();this.t()}connectedCallback(){n(this,"mode");n(this,r);n(this,h);c(this,s);const a=localStorage.getItem(e);if(a&&[h,r].includes(a)){this.mode=a;this.permanent=true}if(this.permanent&&!a){localStorage.setItem(e,this.mode)}const l=[h,r].includes(a);if(this.permanent&&a){this.o()}else{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){this.mode=r;this.o()}if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches){this.mode=h;this.o()}}if(!this.permanent&&!l){window.matchMedia("(prefers-color-scheme: light)").onchange=t=>{this.mode=t.matches?h:r;this.o()};window.matchMedia("(prefers-color-scheme: dark)").onchange=t=>{this.mode=t.matches?r:h;this.o()}}const d=new MutationObserver(((s,h)=>{this.mode=t.documentElement.dataset.colorMode;if(this.permanent&&l){localStorage.setItem(e,this.mode);this.i(i,{permanent:this.permanent})}this.h();this.i(o,{colorScheme:this.mode})}));d.observe(t.documentElement,{attributes:true});this.i(o,{colorScheme:this.mode});this.h()}attributeChangedCallback(t,s,o){if(t==="mode"&&s!==o&&[h,r].includes(o)){const t=localStorage.getItem(e);if(this.mode===t){this.mode=o;this.h();this.o()}else if(this.mode&&this.mode!==t){this.h();this.o()}}else if((t===h||t===r)&&s!==o){this.h()}if(t==="permanent"&&typeof this.permanent==="boolean"){this.permanent?localStorage.setItem(e,this.mode):localStorage.removeItem(e)}}o(){t.documentElement.setAttribute("data-color-mode",this.mode)}h(){this.icon.textContent=this.mode===h?"🌒":"🌞";this.text.textContent=this.mode===h?this.getAttribute(r):this.getAttribute(h)}t(){var s=this.attachShadow({mode:"open"});this.label=t.createElement("span");this.label.setAttribute("class","wrapper");this.label.onclick=()=>{this.mode=this.mode===h?r:h;if(this.permanent){localStorage.setItem(e,this.mode)}this.o();this.h()};s.appendChild(this.label);this.icon=t.createElement("span");this.label.appendChild(this.icon);this.text=t.createElement("span");this.label.appendChild(this.text);const o=`
+[data-color-mode*='dark'], [data-color-mode*='dark'] body {
+  color-scheme: dark;
+  --color-theme-bg: #0d1117;
+  --color-theme-text: #c9d1d9;
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-text);
+}
+
+[data-color-mode*='light'], [data-color-mode*='light'] body {
+  color-scheme: light;
+  --color-theme-bg: #fff;
+  --color-theme-text: #24292f;
+  background-color: var(--color-theme-bg);
+  color: var(--color-theme-text);
+}`;const i="_dark_mode_style_";const n=t.getElementById(i);if(!n){var c=t.createElement("style");c.id=i;c.textContent=o;t.head.appendChild(c)}var a=t.createElement("style");a.textContent=`
+    .wrapper { cursor: pointer; user-select: none; position: relative; }
+    .wrapper > span + span { margin-left: .4rem; }
+    `;s.appendChild(a)}i(t,e){this.dispatchEvent(new CustomEvent(t,{bubbles:true,composed:true,detail:e}))}}customElements.define("dark-mode",a);</script><script>const __TEMPLATE__ = document.createElement('template');
+__TEMPLATE__.innerHTML = `
+<style>
+
+markdown-style h1:hover a.anchor .octicon-link:before,
+markdown-style h2:hover a.anchor .octicon-link:before,
+markdown-style h3:hover a.anchor .octicon-link:before,
+markdown-style h4:hover a.anchor .octicon-link:before,
+markdown-style h5:hover a.anchor .octicon-link:before,
+markdown-style h6:hover a.anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+[data-color-mode*='light'], [data-color-mode*='light'] body, markdown-style[theme*='light'] { --color-prettylights-syntax-comment: #6e7781; --color-prettylights-syntax-constant: #0550ae; --color-prettylights-syntax-entity: #8250df; --color-prettylights-syntax-storage-modifier-import: #24292f; --color-prettylights-syntax-entity-tag: #116329; --color-prettylights-syntax-keyword: #cf222e; --color-prettylights-syntax-string: #0a3069; --color-prettylights-syntax-variable: #953800; --color-prettylights-syntax-brackethighlighter-unmatched: #82071e; --color-prettylights-syntax-invalid-illegal-text: #f6f8fa; --color-prettylights-syntax-invalid-illegal-bg: #82071e; --color-prettylights-syntax-carriage-return-text: #f6f8fa; --color-prettylights-syntax-carriage-return-bg: #cf222e; --color-prettylights-syntax-string-regexp: #116329; --color-prettylights-syntax-markup-list: #3b2300; --color-prettylights-syntax-markup-heading: #0550ae; --color-prettylights-syntax-markup-italic: #24292f; --color-prettylights-syntax-markup-bold: #24292f; --color-prettylights-syntax-markup-deleted-text: #82071e; --color-prettylights-syntax-markup-deleted-bg: #FFEBE9; --color-prettylights-syntax-markup-inserted-text: #116329; --color-prettylights-syntax-markup-inserted-bg: #dafbe1; --color-prettylights-syntax-markup-changed-text: #953800; --color-prettylights-syntax-markup-changed-bg: #ffd8b5; --color-prettylights-syntax-markup-ignored-text: #eaeef2; --color-prettylights-syntax-markup-ignored-bg: #0550ae; --color-prettylights-syntax-meta-diff-range: #8250df; --color-prettylights-syntax-brackethighlighter-angle: #57606a; --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f; --color-prettylights-syntax-constant-other-reference-link: #0a3069; --color-fg-default: #24292f; --color-fg-muted: #57606a; --color-fg-subtle: #6e7781; --color-canvas-default: #ffffff; --color-canvas-subtle: #f6f8fa; --color-border-default: #d0d7de; --color-border-muted: hsla(210,18%,87%,1); --color-neutral-muted: rgba(175,184,193,0.2); --color-accent-fg: #0969da; --color-accent-emphasis: #0969da; --color-attention-subtle: #fff8c5; --color-danger-fg: #cf222e; } [data-color-mode*='dark'], [data-color-mode*='dark'] body, markdown-style[theme*='dark'] { --color-prettylights-syntax-comment: #8b949e; --color-prettylights-syntax-constant: #79c0ff; --color-prettylights-syntax-entity: #d2a8ff; --color-prettylights-syntax-storage-modifier-import: #c9d1d9; --color-prettylights-syntax-entity-tag: #7ee787; --color-prettylights-syntax-keyword: #ff7b72; --color-prettylights-syntax-string: #a5d6ff; --color-prettylights-syntax-variable: #ffa657; --color-prettylights-syntax-brackethighlighter-unmatched: #f85149; --color-prettylights-syntax-invalid-illegal-text: #f0f6fc; --color-prettylights-syntax-invalid-illegal-bg: #8e1519; --color-prettylights-syntax-carriage-return-text: #f0f6fc; --color-prettylights-syntax-carriage-return-bg: #b62324; --color-prettylights-syntax-string-regexp: #7ee787; --color-prettylights-syntax-markup-list: #f2cc60; --color-prettylights-syntax-markup-heading: #1f6feb; --color-prettylights-syntax-markup-italic: #c9d1d9; --color-prettylights-syntax-markup-bold: #c9d1d9; --color-prettylights-syntax-markup-deleted-text: #ffdcd7; --color-prettylights-syntax-markup-deleted-bg: #67060c; --color-prettylights-syntax-markup-inserted-text: #aff5b4; --color-prettylights-syntax-markup-inserted-bg: #033a16; --color-prettylights-syntax-markup-changed-text: #ffdfb6; --color-prettylights-syntax-markup-changed-bg: #5a1e02; --color-prettylights-syntax-markup-ignored-text: #c9d1d9; --color-prettylights-syntax-markup-ignored-bg: #1158c7; --color-prettylights-syntax-meta-diff-range: #d2a8ff; --color-prettylights-syntax-brackethighlighter-angle: #8b949e; --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58; --color-prettylights-syntax-constant-other-reference-link: #a5d6ff; --color-fg-default: #c9d1d9; --color-fg-muted: #8b949e; --color-fg-subtle: #484f58; --color-canvas-default: #0d1117; --color-canvas-subtle: #161b22; --color-border-default: #30363d; --color-border-muted: #21262d; --color-neutral-muted: rgba(110,118,129,0.4); --color-accent-fg: #58a6ff; --color-accent-emphasis: #1f6feb; --color-attention-subtle: rgba(187,128,9,0.15); --color-danger-fg: #f85149; } markdown-style { display: block; -webkit-text-size-adjust: 100%; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; font-size: 16px; line-height: 1.5; word-wrap: break-word; color: var(--color-fg-default); background-color: var(--color-canvas-default); } markdown-style details, markdown-style figcaption, markdown-style figure { display: block; } markdown-style summary { display: list-item; } markdown-style [hidden] { display: none !important; } markdown-style a { background-color: transparent; color: var(--color-accent-fg); text-decoration: none; } markdown-style a:active, markdown-style a:hover { outline-width: 0; } markdown-style abbr[title] { border-bottom: none; text-decoration: underline dotted; } markdown-style b, markdown-style strong { font-weight: 600; } markdown-style dfn { font-style: italic; } markdown-style h1 { margin: .67em 0; font-weight: 600; padding-bottom: .3em; font-size: 2em; border-bottom: 1px solid var(--color-border-muted); } markdown-style mark { background-color: var(--color-attention-subtle); color: var(--color-text-primary); } markdown-style small { font-size: 90%; } markdown-style sub, markdown-style sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } markdown-style sub { bottom: -0.25em; } markdown-style sup { top: -0.5em; } markdown-style img { border-style: none; max-width: 100%; box-sizing: content-box; background-color: var(--color-canvas-default); } markdown-style code, markdown-style kbd, markdown-style pre, markdown-style samp { font-family: monospace,monospace; font-size: 1em; } markdown-style figure { margin: 1em 40px; } markdown-style hr { box-sizing: content-box; overflow: hidden; background: transparent; border-bottom: 1px solid var(--color-border-muted); height: .25em; padding: 0; margin: 24px 0; background-color: var(--color-border-default); border: 0; } markdown-style input { font: inherit; margin: 0; overflow: visible; font-family: inherit; font-size: inherit; line-height: inherit; } markdown-style [type=button], markdown-style [type=reset], markdown-style [type=submit] { -webkit-appearance: button; } markdown-style [type=button]::-moz-focus-inner, markdown-style [type=reset]::-moz-focus-inner, markdown-style [type=submit]::-moz-focus-inner { border-style: none; padding: 0; } markdown-style [type=button]:-moz-focusring, markdown-style [type=reset]:-moz-focusring, markdown-style [type=submit]:-moz-focusring { outline: 1px dotted ButtonText; } markdown-style [type=checkbox], markdown-style [type=radio] { box-sizing: border-box; padding: 0; } markdown-style [type=number]::-webkit-inner-spin-button, markdown-style [type=number]::-webkit-outer-spin-button { height: auto; } markdown-style [type=search] { -webkit-appearance: textfield; outline-offset: -2px; } markdown-style [type=search]::-webkit-search-cancel-button, markdown-style [type=search]::-webkit-search-decoration { -webkit-appearance: none; } markdown-style ::-webkit-input-placeholder { color: inherit; opacity: .54; } markdown-style ::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; } markdown-style a:hover { text-decoration: underline; } markdown-style hr::before { display: table; content: ""; } markdown-style hr::after { display: table; clear: both; content: ""; } markdown-style table { border-spacing: 0; border-collapse: collapse; display: block; width: max-content; max-width: 100%; overflow: auto; } markdown-style td, markdown-style th { padding: 0; } markdown-style details summary { cursor: pointer; } markdown-style details:not([open])>*:not(summary) { display: none !important; } markdown-style kbd { display: inline-block; padding: 3px 5px; font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; line-height: 10px; color: var(--color-fg-default); vertical-align: middle; background-color: var(--color-canvas-subtle); border: solid 1px var(--color-neutral-muted); border-bottom-color: var(--color-neutral-muted); border-radius: 6px; box-shadow: inset 0 -1px 0 var(--color-neutral-muted); } markdown-style h1, markdown-style h2, markdown-style h3, markdown-style h4, markdown-style h5, markdown-style h6 { margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; } markdown-style h2 { font-weight: 600; padding-bottom: .3em; font-size: 1.5em; border-bottom: 1px solid var(--color-border-muted); } markdown-style h3 { font-weight: 600; font-size: 1.25em; } markdown-style h4 { font-weight: 600; font-size: 1em; } markdown-style h5 { font-weight: 600; font-size: .875em; } markdown-style h6 { font-weight: 600; font-size: .85em; color: var(--color-fg-muted); } markdown-style p { margin-top: 0; margin-bottom: 10px; } markdown-style blockquote { margin: 0; padding: 0 1em; color: var(--color-fg-muted); border-left: .25em solid var(--color-border-default); } markdown-style ul, markdown-style ol { margin-top: 0; margin-bottom: 0; padding-left: 2em; } markdown-style ol ol, markdown-style ul ol { list-style-type: lower-roman; } markdown-style ul ul ol, markdown-style ul ol ol, markdown-style ol ul ol, markdown-style ol ol ol { list-style-type: lower-alpha; } markdown-style dd { margin-left: 0; } markdown-style tt, markdown-style code { font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; font-size: 12px; } markdown-style pre { margin-top: 0; margin-bottom: 0; font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; font-size: 12px; word-wrap: normal; } markdown-style .octicon { display: inline-block; overflow: visible !important; vertical-align: text-bottom; fill: currentColor; } markdown-style ::placeholder { color: var(--color-fg-subtle); opacity: 1; } markdown-style input::-webkit-outer-spin-button, markdown-style input::-webkit-inner-spin-button { margin: 0; -webkit-appearance: none; appearance: none; }
+markdown-style .token.comment, markdown-style .token.prolog, markdown-style .token.doctype, markdown-style .token.cdata { color: var(--color-prettylights-syntax-comment); } markdown-style .token.namespace { opacity: 0.7; } markdown-style .token.tag, markdown-style .token.selector, markdown-style .token.constant, markdown-style .token.symbol, markdown-style .token.deleted { color: var(--color-prettylights-syntax-entity-tag); } markdown-style .token.maybe-class-name { color: var(--color-prettylights-syntax-variable); } markdown-style .token.property-access, markdown-style .token.operator, markdown-style .token.boolean, markdown-style .token.number, markdown-style .token.selector markdown-style .token.class, markdown-style .token.attr-name, markdown-style .token.string, markdown-style .token.char, markdown-style .token.builtin { color: var(--color-prettylights-syntax-constant); } markdown-style .token.deleted { color: var(--color-prettylights-syntax-markup-deleted-text); } markdown-style .token.property { color: var(--color-prettylights-syntax-constant); } markdown-style .token.punctuation { color: var(--color-prettylights-syntax-markup-bold); } markdown-style .token.function { color: var(--color-prettylights-syntax-entity); } markdown-style .code-line .token.deleted { background-color: var(--color-prettylights-syntax-markup-deleted-bg); } markdown-style .token.inserted { color: var(--color-prettylights-syntax-markup-inserted-text); } markdown-style .code-line .token.inserted { background-color: var(--color-prettylights-syntax-markup-inserted-bg); } markdown-style .token.variable { color: var(--color-prettylights-syntax-constant); } markdown-style .token.entity, markdown-style .token.url, .language-css markdown-style .token.string, .style markdown-style .token.string { color: var(--color-prettylights-syntax-string); } markdown-style .token.color, markdown-style .token.atrule, markdown-style .token.attr-value, markdown-style .token.function, markdown-style .token.class-name { color: var(--color-prettylights-syntax-string); } markdown-style .token.rule, markdown-style .token.regex, markdown-style .token.important, markdown-style .token.keyword { color: var(--color-prettylights-syntax-keyword); } markdown-style .token.coord { color: var(--color-prettylights-syntax-meta-diff-range); } markdown-style .token.important, markdown-style .token.bold { font-weight: bold; } markdown-style .token.italic { font-style: italic; } markdown-style .token.entity { cursor: help; }
+markdown-style [data-catalyst] { display: block; } markdown-style g-emoji { font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 1em; font-style: normal !important; font-weight: 400; line-height: 1; vertical-align: -0.075em; } markdown-style g-emoji img { width: 1em; height: 1em; } markdown-style::before { display: table; content: ""; } markdown-style::after { display: table; clear: both; content: ""; } markdown-style>*:first-child { margin-top: 0 !important; } markdown-style>*:last-child { margin-bottom: 0 !important; } markdown-style a:not([href]) { color: inherit; text-decoration: none; } markdown-style .absent { color: var(--color-danger-fg); } markdown-style a.anchor { float: left; padding-right: 4px; margin-left: -20px; line-height: 1; } markdown-style a.anchor:focus { outline: none; } markdown-style p, markdown-style blockquote, markdown-style ul, markdown-style ol, markdown-style dl, markdown-style table, markdown-style pre, markdown-style details { margin-top: 0; margin-bottom: 16px; } markdown-style blockquote>:first-child { margin-top: 0; } markdown-style blockquote>:last-child { margin-bottom: 0; } markdown-style sup>a::before { content: "["; } markdown-style sup>a::after { content: "]"; }
+markdown-style .octicon-video { border: 1px solid #d0d7de !important; border-radius: 6px !important; display: block; } markdown-style .octicon-video summary { border-bottom: 1px solid #d0d7de !important; padding: 8px 16px !important; cursor: pointer; } markdown-style .octicon-video > video { display: block !important; max-width: 100% !important; padding: 2px; box-sizing: border-box; border-bottom-right-radius: 6px !important; border-bottom-left-radius: 6px !important; } markdown-style details.octicon-video:not([open])>*:not(summary) { display: none !important; } markdown-style details.octicon-video:not([open]) > summary { border-bottom: 0 !important; } markdown-style h1 .octicon-link, markdown-style h2 .octicon-link, markdown-style h3 .octicon-link, markdown-style h4 .octicon-link, markdown-style h5 .octicon-link, markdown-style h6 .octicon-link { color: var(--color-fg-default); vertical-align: middle; visibility: hidden; } markdown-style h1:hover .anchor, markdown-style h2:hover .anchor, markdown-style h3:hover .anchor, markdown-style h4:hover .anchor, markdown-style h5:hover .anchor, markdown-style h6:hover .anchor { text-decoration: none; } markdown-style h1:hover .anchor .octicon-link, markdown-style h2:hover .anchor .octicon-link, markdown-style h3:hover .anchor .octicon-link, markdown-style h4:hover .anchor .octicon-link, markdown-style h5:hover .anchor .octicon-link, markdown-style h6:hover .anchor .octicon-link { visibility: visible; } markdown-style h1 tt, markdown-style h1 code, markdown-style h2 tt, markdown-style h2 code, markdown-style h3 tt, markdown-style h3 code, markdown-style h4 tt, markdown-style h4 code, markdown-style h5 tt, markdown-style h5 code, markdown-style h6 tt, markdown-style h6 code { padding: 0 .2em; font-size: inherit; } markdown-style ul.no-list, markdown-style ol.no-list { padding: 0; list-style-type: none; } markdown-style ol[type="1"] { list-style-type: decimal; } markdown-style ol[type=a] { list-style-type: lower-alpha; } markdown-style ol[type=i] { list-style-type: lower-roman; } markdown-style div>ol:not([type]) { list-style-type: decimal; } markdown-style ul ul, markdown-style ul ol, markdown-style ol ol, markdown-style ol ul { margin-top: 0; margin-bottom: 0; } markdown-style li>p { margin-top: 16px; } markdown-style li+li { margin-top: .25em; } markdown-style dl { padding: 0; } markdown-style dl dt { padding: 0; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: 600; } markdown-style dl dd { padding: 0 16px; margin-bottom: 16px; } markdown-style table th { font-weight: 600; } markdown-style table th, markdown-style table td { padding: 6px 13px; border: 1px solid var(--color-border-default); } markdown-style table tr { background-color: var(--color-canvas-default); border-top: 1px solid var(--color-border-muted); } markdown-style table tr:nth-child(2n) { background-color: var(--color-canvas-subtle); } markdown-style table img { background-color: transparent; vertical-align: middle; } markdown-style img[align=right] { padding-left: 20px; } markdown-style img[align=left] { padding-right: 20px; } markdown-style .emoji { max-width: none; vertical-align: text-top; background-color: transparent; } markdown-style span.frame { display: block; overflow: hidden; } markdown-style span.frame>span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0 0; overflow: hidden; border: 1px solid var(--color-border-default); } markdown-style span.frame span img { display: block; float: left; } markdown-style span.frame span span { display: block; padding: 5px 0 0; clear: both; color: var(--color-fg-default); } markdown-style span.align-center { display: block; overflow: hidden; clear: both; } markdown-style span.align-center>span { display: block; margin: 13px auto 0; overflow: hidden; text-align: center; } markdown-style span.align-center span img { margin: 0 auto; text-align: center; } markdown-style span.align-right { display: block; overflow: hidden; clear: both; } markdown-style span.align-right>span { display: block; margin: 13px 0 0; overflow: hidden; text-align: right; } markdown-style span.align-right span img { margin: 0; text-align: right; } markdown-style span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; } markdown-style span.float-left span { margin: 13px 0 0; } markdown-style span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; } markdown-style span.float-right>span { display: block; margin: 13px auto 0; overflow: hidden; text-align: right; } markdown-style code, markdown-style tt { padding: .2em .4em; margin: 0; font-size: 85%; background-color: var(--color-neutral-muted); border-radius: 6px; } markdown-style code br, markdown-style tt br { display: none; } markdown-style del code { text-decoration: inherit; } markdown-style pre code { font-size: 100%; } markdown-style pre>code { padding: 0; margin: 0; word-break: normal; white-space: pre; background: transparent; border: 0; } markdown-style pre { position: relative; font-size: 85%; line-height: 1.45; background-color: var(--color-canvas-subtle); border-radius: 6px; } markdown-style pre code, markdown-style pre tt { display: inline; max-width: auto; padding: 0; margin: 0; overflow: visible; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0; } markdown-style pre > code { padding: 16px; overflow: auto; display: block; } markdown-style .csv-data td, markdown-style .csv-data th { padding: 5px; overflow: hidden; font-size: 12px; line-height: 1; text-align: left; white-space: nowrap; } markdown-style .csv-data .blob-num { padding: 10px 8px 9px; text-align: right; background: var(--color-canvas-default); border: 0; } markdown-style .csv-data tr { border-top: 0; } markdown-style .csv-data th { font-weight: 600; background: var(--color-canvas-subtle); border-top: 0; } markdown-style .footnotes { font-size: 12px; color: var(--color-fg-muted); border-top: 1px solid var(--color-border-default); } markdown-style .footnotes ol { padding-left: 16px; } markdown-style .footnotes li { position: relative; } markdown-style .footnotes li:target::before { position: absolute; top: -8px; right: -8px; bottom: -8px; left: -24px; pointer-events: none; content: ""; border: 2px solid var(--color-accent-emphasis); border-radius: 6px; } markdown-style .footnotes li:target { color: var(--color-fg-default); } markdown-style .footnotes .data-footnote-backref g-emoji { font-family: monospace; } markdown-style .task-list-item { list-style-type: none; } markdown-style .task-list-item label { font-weight: 400; } markdown-style .task-list-item.enabled label { cursor: pointer; } markdown-style .task-list-item+.task-list-item { margin-top: 3px; } markdown-style .task-list-item .handle { display: none; } markdown-style .task-list-item-checkbox, markdown-style input[type="checkbox"] { margin: 0 .2em .25em -1.6em; vertical-align: middle; } markdown-style .contains-task-list:dir(rtl) .task-list-item-checkbox, markdown-style .contains-task-list:dir(rtl) input[type="checkbox"] { margin: 0 -1.6em .25em .2em; } markdown-style ::-webkit-calendar-picker-indicator { filter: invert(50%); }
+</style>
+<slot></slot>
+`;
+class MarkdownStyle extends HTMLElement {
+    constructor() {
+        super();
+        this.shadow = this.attachShadow({ mode: 'open' });
+        this.shadow.appendChild(__TEMPLATE__.content.cloneNode(true));
+        const style = Array.prototype.slice
+            .call(this.shadow.children)
+            .find((item) => item.tagName === 'STYLE');
+        if (style) {
+            const id = '__MARKDOWN_STYLE__';
+            const findStyle = document.getElementById(id);
+            if (!findStyle) {
+                style.id = id;
+                document.head.append(style);
+            }
+        }
+    }
+    get theme() {
+        const value = this.getAttribute('theme');
+        return value === null ? '' : value;
+    }
+    set theme(name) {
+        this.setAttribute('theme', name);
+    }
+    connectedCallback() {
+        if (!this.theme) {
+            const { colorMode } = document.documentElement.dataset;
+            this.theme = colorMode;
+            const observer = new MutationObserver((mutationsList, observer) => {
+                this.theme = document.documentElement.dataset.colorMode;
+            });
+            observer.observe(document.documentElement, { attributes: true });
+            window.matchMedia('(prefers-color-scheme: light)').onchange = (event) => {
+                this.theme = event.matches ? 'light' : 'dark';
+            };
+            window.matchMedia('(prefers-color-scheme: dark)').onchange = (event) => {
+                this.theme = event.matches ? 'dark' : 'light';
+            };
+        }
+    }
+}
+customElements.define('markdown-style', MarkdownStyle);</script><markdown-style style="max-width: 960px; margin: 0 auto 60px auto; padding: 8px;" class="markdown-style">
+<h1 id="ab"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ab"><span class="octicon octicon-link"></span></a>ab</h1>
+<p>Apache服务器的性能测试工具</p>
+<h2 id="安装"><a class="anchor" aria-hidden="true" tabindex="-1" href="#安装"><span class="octicon octicon-link"></span></a>安装</h2>
+<p>若系统未安装，使用以下命令安装</p>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># Ubuntu</span>
+</span><span class="code-line line-number" line="2"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> apache2-utils
+</span><span class="code-line line-number" line="3">
+</span><span class="code-line line-number" line="4"><span class="token comment"># Centos</span>
+</span><span class="code-line line-number" line="5">yum <span class="token function">install</span> httpd-tools
+</span><span class="code-line line-number" line="6">
+</span></code><div onclick="copied(this)" data-code="# Ubuntu
+sudo apt-get install apache2-utils
+
+# Centos
+yum install httpd-tools
+
+" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+<h2 id="补充说明"><a class="anchor" aria-hidden="true" tabindex="-1" href="#补充说明"><span class="octicon octicon-link"></span></a>补充说明</h2>
+<p><strong>ab命令</strong> 是一个测试你 Apache http 服务器的工具，你可以通过这个工具，指定一个单位时间内向 apache 发出的请求数量来看看你的 Apache 和机器配合的性能如何。</p>
+<h3 id="语法"><a class="anchor" aria-hidden="true" tabindex="-1" href="#语法"><span class="octicon octicon-link"></span></a>语法</h3>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">ab <span class="token punctuation">[</span> <span class="token parameter variable">-A</span> auth-username:password <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-c</span> concurrency <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-C</span> cookie-name<span class="token operator">=</span>value
+</span><span class="code-line line-number" line="2"><span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-d</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-e</span> csv-file <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-g</span> gnuplot-file <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-h</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-H</span> custom-header <span class="token punctuation">]</span> <span class="token punctuation">[</span>
+</span><span class="code-line line-number" line="3"><span class="token parameter variable">-i</span>  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  <span class="token parameter variable">-k</span>  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  <span class="token parameter variable">-n</span>  requests  <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-p</span> POST-file <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-P</span> proxy-auth-user‐
+</span><span class="code-line line-number" line="4">name:password <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-q</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-s</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-S</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-t</span> timelimit <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-T</span> content-type  <span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="5"><span class="token punctuation">[</span>  <span class="token parameter variable">-v</span> verbosity<span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-V</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-w</span> <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-x</span> <span class="token operator">&#x3C;</span>table<span class="token operator">></span>-attributes <span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token parameter variable">-X</span> proxy<span class="token punctuation">[</span>:port<span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="6"><span class="token punctuation">]</span>  <span class="token punctuation">[</span>  <span class="token parameter variable">-y</span>  <span class="token operator">&#x3C;</span>tr<span class="token operator">></span>-attributes  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  <span class="token parameter variable">-z</span>   <span class="token operator">&#x3C;</span>td<span class="token operator">></span>-attributes   <span class="token punctuation">]</span>   <span class="token punctuation">[</span>http://<span class="token punctuation">]</span>host‐
+</span><span class="code-line line-number" line="7">name<span class="token punctuation">[</span>:port<span class="token punctuation">]</span>/path
+</span></code><div onclick="copied(this)" data-code="ab [ -A auth-username:password ] [ -c concurrency ] [ -C cookie-name=value
+] [ -d ] [ -e csv-file ] [ -g gnuplot-file ] [ -h ] [ -H custom-header ] [
+-i  ]  [  -k  ]  [  -n  requests  ] [ -p POST-file ] [ -P proxy-auth-user‐
+name:password ] [ -q ] [ -s ] [ -S ] [ -t timelimit ] [ -T content-type  ]
+[  -v verbosity] [ -V ] [ -w ] [ -x <table>-attributes ] [ -X proxy[:port]
+]  [  -y  <tr>-attributes  ]  [  -z   <td>-attributes   ]   [http://]host‐
+name[:port]/path
+" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+<h3 id="选项"><a class="anchor" aria-hidden="true" tabindex="-1" href="#选项"><span class="octicon octicon-link"></span></a>选项</h3>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token parameter variable">-A</span> auth-username:password
+</span><span class="code-line line-number" line="2">      <span class="token comment">#  支持基本的验证证书,用户名和密码之间使用"冒号"                    :</span>
+</span><span class="code-line line-number" line="3">      <span class="token comment"># 分隔开,ab将以明文方式传送过去.不管服务器是不是需要</span>
+</span><span class="code-line line-number" line="4">      <span class="token comment"># ,也就是说你的服务器需要支持401认证.</span>
+</span><span class="code-line line-number" line="5">
+</span><span class="code-line line-number" line="6"><span class="token parameter variable">-c</span> concurrency
+</span><span class="code-line line-number" line="7">      <span class="token comment"># 同时向服务器端发送的请求数目，默认状态下是一次 只执行一个http请求.</span>
+</span><span class="code-line line-number" line="8">
+</span><span class="code-line line-number" line="9"><span class="token parameter variable">-C</span> cookie-name<span class="token operator">=</span>value
+</span><span class="code-line line-number" line="10">      <span class="token comment"># Add a Cookie: line to the request. The argument is typically in the</span>
+</span><span class="code-line line-number" line="11">      <span class="token comment"># form of a name=value pair. This field is repeatable.</span>
+</span><span class="code-line line-number" line="12">
+</span><span class="code-line line-number" line="13"><span class="token parameter variable">-d</span>    <span class="token comment">#  Do not display  the  "percentage  served  within  XX  [ms]  table".</span>
+</span><span class="code-line line-number" line="14">      <span class="token comment"># (legacy support).</span>
+</span><span class="code-line line-number" line="15">
+</span><span class="code-line line-number" line="16"><span class="token parameter variable">-e</span> csv-file
+</span><span class="code-line line-number" line="17">      <span class="token comment"># Write  a  Comma  separated value (CSV) file which contains for each</span>
+</span><span class="code-line line-number" line="18">      <span class="token comment"># percentage (from 1% to 100%) the time (in milli seconds) it took to</span>
+</span><span class="code-line line-number" line="19">      <span class="token comment"># serve  that percentage of the requests. This is usually more useful</span>
+</span><span class="code-line line-number" line="20">      <span class="token comment"># than the 'gnuplot' file; as the results are already 'binned'.</span>
+</span><span class="code-line line-number" line="21">
+</span><span class="code-line line-number" line="22"><span class="token parameter variable">-g</span> gnuplot-file
+</span><span class="code-line line-number" line="23">      <span class="token comment"># Write all measured values out as a 'gnuplot' or TSV  (Tab  separate</span>
+</span><span class="code-line line-number" line="24">      <span class="token comment"># values)  file.  This file can easily be imported into packages like</span>
+</span><span class="code-line line-number" line="25">      <span class="token comment"># Gnuplot, IDL, Mathematica, Igor or even Excell. The labels  are  on</span>
+</span><span class="code-line line-number" line="26">      <span class="token comment"># the first line of the file.</span>
+</span><span class="code-line line-number" line="27"><span class="token parameter variable">-h</span>    <span class="token comment"># 显示使用说明</span>
+</span><span class="code-line line-number" line="28"><span class="token parameter variable">-H</span> custom-header
+</span><span class="code-line line-number" line="29">      <span class="token comment"># 向请求包追加附加的标题字串.此参数应该是有效的标题         行(header</span>
+</span><span class="code-line line-number" line="30">      <span class="token comment"># line)形式,通常使用冒号":"来分隔有效配对 (valid  pair)例如  'Accept-</span>
+</span><span class="code-line line-number" line="31">      <span class="token comment"># Encoding: zip/zop;8 bit';</span>
+</span><span class="code-line line-number" line="32">
+</span><span class="code-line line-number" line="33"><span class="token parameter variable">-i</span>    <span class="token comment"># 使用一个 http 头(HEAD) 来替换 GET方法.不可以掺入POST 方法</span>
+</span><span class="code-line line-number" line="34">
+</span><span class="code-line line-number" line="35"><span class="token parameter variable">-k</span>    <span class="token comment">#  允许http      KeepAlive      ；也就是说执行多个请求在一个      http</span>
+</span><span class="code-line line-number" line="36">      <span class="token comment"># 会话当中，默认是不允许的也就是no KeepAlive啦;)</span>
+</span><span class="code-line line-number" line="37">
+</span><span class="code-line line-number" line="38"><span class="token parameter variable">-n</span> requests
+</span><span class="code-line line-number" line="39">      <span class="token comment"># 执行一次测试会话的时候所发出的请求数目,默认是执行一个单一的请求</span>
+</span><span class="code-line line-number" line="40">      <span class="token comment"># 当然了这样的测试结果也就没什么意义了</span>
+</span><span class="code-line line-number" line="41">
+</span><span class="code-line line-number" line="42"><span class="token parameter variable">-p</span> POST-file
+</span><span class="code-line line-number" line="43">      <span class="token comment"># 测试程序也就是ab,将向Apache server发送带有HTTP POST 的请求.</span>
+</span><span class="code-line line-number" line="44">
+</span><span class="code-line line-number" line="45"><span class="token parameter variable">-P</span> proxy-auth-username:password
+</span><span class="code-line line-number" line="46">      <span class="token comment"># 当需要通过代理测试一台 HTTP 服务器的时候而你的代理</span>
+</span><span class="code-line line-number" line="47">      <span class="token comment"># 又需要用户名密码验证,这时你可以使用这个选项,同样</span>
+</span><span class="code-line line-number" line="48">      <span class="token comment"># 用户名与密码之间使用冒号":"分隔开,ab将之以明文的方式</span>
+</span><span class="code-line line-number" line="49">      <span class="token comment"># 发送出去,当然,前提是你的代理是处于407认证状态的</span>
+</span><span class="code-line line-number" line="50">
+</span><span class="code-line line-number" line="51"><span class="token parameter variable">-q</span>    <span class="token comment">#  When processing more than 150 requests, ab outputs a progress count</span>
+</span><span class="code-line line-number" line="52">      <span class="token comment"># on  stderr  every  10% or 100 requests or so. The -q flag will sup‐</span>
+</span><span class="code-line line-number" line="53">      <span class="token comment"># press these messages.</span>
+</span><span class="code-line line-number" line="54">
+</span><span class="code-line line-number" line="55"><span class="token parameter variable">-s</span>    <span class="token comment">#  When compiled in (ab -h will show you) use the SSL protected  https</span>
+</span><span class="code-line line-number" line="56">      <span class="token comment"># rather  than  the  http  protocol. This feature is experimental and</span>
+</span><span class="code-line line-number" line="57">      <span class="token comment"># very rudimentary. You probably do not want to use it.</span>
+</span><span class="code-line line-number" line="58">
+</span><span class="code-line line-number" line="59"><span class="token parameter variable">-S</span>    <span class="token comment">#  Do not display the median and standard deviation values,  nor  dis‐</span>
+</span><span class="code-line line-number" line="60">      <span class="token comment"># play  the  warning/error  messages  when the average and median are</span>
+</span><span class="code-line line-number" line="61">      <span class="token comment"># more than one or two times the standard deviation  apart.  And  de‐</span>
+</span><span class="code-line line-number" line="62">      <span class="token comment"># fault to the min/avg/max values. (legacy support).</span>
+</span><span class="code-line line-number" line="63">
+</span><span class="code-line line-number" line="64"><span class="token parameter variable">-t</span> timelimit
+</span><span class="code-line line-number" line="65">      <span class="token comment">#  设置测试的时间的长短，使用这个选项ab将自动设置</span>
+</span><span class="code-line line-number" line="66">      <span class="token comment"># 测试请求会话数目为50000，然后以你设置的时间为</span>
+</span><span class="code-line line-number" line="67">      <span class="token comment"># 固定周期.默认状态下是没有时限的，也就是直到完成</span>
+</span><span class="code-line line-number" line="68">      <span class="token comment"># 你所设置的请求数目为止.</span>
+</span><span class="code-line line-number" line="69">
+</span><span class="code-line line-number" line="70"><span class="token parameter variable">-T</span> content-type
+</span><span class="code-line line-number" line="71">      <span class="token comment"># 内容类型标头,使用在POST数据的时候.</span>
+</span><span class="code-line line-number" line="72">
+</span><span class="code-line line-number" line="73"><span class="token parameter variable">-v</span> verbosity
+</span><span class="code-line line-number" line="74">      <span class="token comment"># 设置冗余级别,4级打印出每个请求标头的详细信息,</span>
+</span><span class="code-line line-number" line="75">      <span class="token comment"># 3级打印出回应代码(例如,404,200),2级打印出警告 信息和指示消息</span>
+</span><span class="code-line line-number" line="76">
+</span><span class="code-line line-number" line="77"><span class="token parameter variable">-V</span>    <span class="token comment"># 显示版本号并且退出</span>
+</span><span class="code-line line-number" line="78"><span class="token parameter variable">-w</span>    <span class="token comment"># 打印输出结果到HTML表中. 默认的表是两列n行白底黑框</span>
+</span><span class="code-line line-number" line="79">
+</span><span class="code-line line-number" line="80"><span class="token parameter variable">-x</span> <span class="token operator">&#x3C;</span>table<span class="token operator">></span>-attributes
+</span><span class="code-line line-number" line="81">      <span class="token comment"># 使用字串来描述表的属性,该属性字串应该插入到&#x3C;table 这里 ></span>
+</span><span class="code-line line-number" line="82">
+</span><span class="code-line line-number" line="83"><span class="token parameter variable">-X</span> proxy<span class="token punctuation">[</span>:port<span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="84">      <span class="token comment"># Use a proxy server for the requests.</span>
+</span><span class="code-line line-number" line="85">
+</span><span class="code-line line-number" line="86"><span class="token parameter variable">-y</span> <span class="token operator">&#x3C;</span>tr<span class="token operator">></span>-attributes
+</span><span class="code-line line-number" line="87">      <span class="token comment"># 用于生成html表格每行的属性名 (&#x3C;tr>)</span>
+</span><span class="code-line line-number" line="88">
+</span><span class="code-line line-number" line="89"><span class="token parameter variable">-z</span> <span class="token operator">&#x3C;</span>td<span class="token operator">></span>-attributes
+</span><span class="code-line line-number" line="90">      <span class="token comment"># 用于生成html表格每列的属性名 (&#x3C;td>)</span>
+</span></code><div onclick="copied(this)" data-code="-A auth-username:password
+      #  支持基本的验证证书,用户名和密码之间使用&#x22;冒号&#x22;                    :
+      # 分隔开,ab将以明文方式传送过去.不管服务器是不是需要
+      # ,也就是说你的服务器需要支持401认证.
+
+-c concurrency
+      # 同时向服务器端发送的请求数目，默认状态下是一次 只执行一个http请求.
+
+-C cookie-name=value
+      # Add a Cookie: line to the request. The argument is typically in the
+      # form of a name=value pair. This field is repeatable.
+
+-d    #  Do not display  the  &#x22;percentage  served  within  XX  [ms]  table&#x22;.
+      # (legacy support).
+
+-e csv-file
+      # Write  a  Comma  separated value (CSV) file which contains for each
+      # percentage (from 1% to 100%) the time (in milli seconds) it took to
+      # serve  that percentage of the requests. This is usually more useful
+      # than the &#x27;gnuplot&#x27; file; as the results are already &#x27;binned&#x27;.
+
+-g gnuplot-file
+      # Write all measured values out as a &#x27;gnuplot&#x27; or TSV  (Tab  separate
+      # values)  file.  This file can easily be imported into packages like
+      # Gnuplot, IDL, Mathematica, Igor or even Excell. The labels  are  on
+      # the first line of the file.
+-h    # 显示使用说明
+-H custom-header
+      # 向请求包追加附加的标题字串.此参数应该是有效的标题         行(header
+      # line)形式,通常使用冒号&#x22;:&#x22;来分隔有效配对 (valid  pair)例如  &#x27;Accept-
+      # Encoding: zip/zop;8 bit&#x27;;
+
+-i    # 使用一个 http 头(HEAD) 来替换 GET方法.不可以掺入POST 方法
+
+-k    #  允许http      KeepAlive      ；也就是说执行多个请求在一个      http
+      # 会话当中，默认是不允许的也就是no KeepAlive啦;)
+
+-n requests
+      # 执行一次测试会话的时候所发出的请求数目,默认是执行一个单一的请求
+      # 当然了这样的测试结果也就没什么意义了
+
+-p POST-file
+      # 测试程序也就是ab,将向Apache server发送带有HTTP POST 的请求.
+
+-P proxy-auth-username:password
+      # 当需要通过代理测试一台 HTTP 服务器的时候而你的代理
+      # 又需要用户名密码验证,这时你可以使用这个选项,同样
+      # 用户名与密码之间使用冒号&#x22;:&#x22;分隔开,ab将之以明文的方式
+      # 发送出去,当然,前提是你的代理是处于407认证状态的
+
+-q    #  When processing more than 150 requests, ab outputs a progress count
+      # on  stderr  every  10% or 100 requests or so. The -q flag will sup‐
+      # press these messages.
+
+-s    #  When compiled in (ab -h will show you) use the SSL protected  https
+      # rather  than  the  http  protocol. This feature is experimental and
+      # very rudimentary. You probably do not want to use it.
+
+-S    #  Do not display the median and standard deviation values,  nor  dis‐
+      # play  the  warning/error  messages  when the average and median are
+      # more than one or two times the standard deviation  apart.  And  de‐
+      # fault to the min/avg/max values. (legacy support).
+
+-t timelimit
+      #  设置测试的时间的长短，使用这个选项ab将自动设置
+      # 测试请求会话数目为50000，然后以你设置的时间为
+      # 固定周期.默认状态下是没有时限的，也就是直到完成
+      # 你所设置的请求数目为止.
+
+-T content-type
+      # 内容类型标头,使用在POST数据的时候.
+
+-v verbosity
+      # 设置冗余级别,4级打印出每个请求标头的详细信息,
+      # 3级打印出回应代码(例如,404,200),2级打印出警告 信息和指示消息
+
+-V    # 显示版本号并且退出
+-w    # 打印输出结果到HTML表中. 默认的表是两列n行白底黑框
+
+-x <table>-attributes
+      # 使用字串来描述表的属性,该属性字串应该插入到<table 这里 >
+
+-X proxy[:port]
+      # Use a proxy server for the requests.
+
+-y <tr>-attributes
+      # 用于生成html表格每行的属性名 (<tr>)
+
+-z <td>-attributes
+      # 用于生成html表格每列的属性名 (<td>)
+" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+<h3 id="参数"><a class="anchor" aria-hidden="true" tabindex="-1" href="#参数"><span class="octicon octicon-link"></span></a>参数</h3>
+<p>主机：被测试主机。</p>
+<h3 id="实例"><a class="anchor" aria-hidden="true" tabindex="-1" href="#实例"><span class="octicon octicon-link"></span></a>实例</h3>
+<pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># 10个并发， 请求500次</span>
+</span><span class="code-line line-number" line="2">ab <span class="token parameter variable">-c</span> <span class="token number">10</span> <span class="token parameter variable">-n</span> <span class="token number">500</span> https://www.qq.com/
+</span></code><div onclick="copied(this)" data-code="# 10个并发， 请求500次
+ab -c 10 -n 500 https://www.qq.com/
+" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+<style>markdown-style pre .copied {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  color: #a5afbb;
+  top: 6px;
+  right: 6px;
+  border-radius: 5px;
+  background: #82828226;
+  padding: 6px;
+  font-size: 12px;
+  transition: all .3s;
+}
+markdown-style pre .copied:not(.active) {
+  visibility: hidden;
+}
+markdown-style pre:hover .copied {
+  visibility: visible;
+}
+markdown-style pre:hover .copied:hover {
+  background: #4caf50;
+  color: #fff;
+}
+markdown-style pre:hover .copied:active,
+markdown-style pre .copied.active {
+  background: #2e9b33;
+  color: #fff;
+}
+markdown-style pre .copied .octicon-copy {
+  display: block;
+}
+markdown-style pre .copied .octicon-check {
+  display: none;
+}
+markdown-style pre .active .octicon-copy {
+  display: none;
+}
+markdown-style pre .active .octicon-check {
+  display: block;
+}</style><script>/*! @uiw/copy-to-clipboard v1.0.12 | MIT (c) 2021 Kenny Wang | https://github.com/uiwjs/copy-to-clipboard.git */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e="undefined"!=typeof globalThis?globalThis:e||self).copyTextToClipboard=t()}(this,(function(){"use strict";return function(e,t){const o=document.createElement("textarea");o.value=e,o.setAttribute("readonly",""),o.style={position:"absolute",left:"-9999px"},document.body.appendChild(o);const n=document.getSelection().rangeCount>0&&document.getSelection().getRangeAt(0);o.select();let c=!1;try{c=!!document.execCommand("copy")}catch(e){c=!1}document.body.removeChild(o),n&&document.getSelection&&(document.getSelection().removeAllRanges(),document.getSelection().addRange(n)),t&&t(c)}}));
+
+function copied(target, str) {
+  target.classList.add('active');
+  copyTextToClipboard(target.dataset.code, function() {
+    setTimeout(() => {
+      target.classList.remove('active');
+    }, 2000);
+  });
+}</script></markdown-style>
+
+</div>
+<!-- GPT高级命令搜索引擎：https://github.com/hougarry -->
+<div class="footer ">
+    <a target="_blank" href="https://github.com/hougarry/chatgpt-advanced-prompts/new/master/command">添加命令</a> |
+    <a href="../hot.html">命令列表</a> |
+    <br />
+    <a href="https://github.com/hougarry/chatgpt-advanced-prompts" target="_blank">Github</a> |
+    <br />
+    收藏本站请使用 Ctrl+D 或者Command+d
+    <br /> 共搜集到
+    <span id="commands_info">
+      4
+    </span> 个GPT高级命令，超过 <a href="../contributors.html">5+</a> 贡献者
+  </div>
+<script type="text/javascript" src="../js/dt.js?v=1695011774960"></script>
+<script type="text/javascript" src="../js/index.js?v=1695011774960"></script>
+</body>
+</html>
