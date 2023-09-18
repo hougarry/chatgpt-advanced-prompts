@@ -6,12 +6,11 @@
 </p>
 
 ![License](https://img.shields.io/badge/License-MIT-blue)
-[![Blog](https://img.shields.io/badge/Blog-OpenAI-yellow)](https://blog.garyhou2023.info)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-green)](https://discord.com/invite/openai)
+[![Blog](https://img.shields.io/badge/Blog-Myblog-purple)](https://blog.garyhou2023.info)
 
 This repository is your go-to resource for advanced GPT-4 prompts. Whether you're a researcher, developer, or enthusiast, here you'll find comprehensive guides, explanations, and examples to elevate your GPT-4 experience. 
 
-❗ Note: While efforts are made to ensure accuracy, we cannot guarantee that all content is up to date. Use at your own risk.
+❗ Note: While efforts are made to ensure accuracy, we cannot guarantee that all content is up to date. Join our contributor as long as you upload 1 advanced prompt!
 
 #### Table of Contents
 - [Introduction](#introduction)
