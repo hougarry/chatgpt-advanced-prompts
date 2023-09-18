@@ -1,6 +1,7 @@
 GPT-dev-mo2-开发者模式2
 ===
 
+开发者模式版本2
 
 ## From: https://github.com/0xk1h0/ChatGPT_DAN
 
