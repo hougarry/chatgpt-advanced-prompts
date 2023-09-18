@@ -24,10 +24,10 @@
     "p": "/Mr. Ranedeer-AI教师",
     "d": "AI教师，可使用任何语言，根据你想学习的主题自动生成大纲和内容"
   },
-  "computer-expert-IT专家": {
-    "n": "computer-expert-IT专家",
-    "p": "/computer-expert-IT专家",
-    "d": "computer-expert-IT专家,精通编程语言,可以帮助你解决任何编程问题"
+  "computer-expert-计算机专家": {
+    "n": "computer-expert-计算机专家",
+    "p": "/computer-expert-计算机专家",
+    "d": "computer-expert-计算机专家,IT,开发，精通编程语言,可以帮助你解决任何编程问题"
   },
   "blog-Writer-写作助手": {
     "n": "blog-Writer-写作助手",
