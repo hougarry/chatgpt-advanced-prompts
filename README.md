@@ -16,8 +16,6 @@
   </em>
 </p>
 
----
-
 <p align="center">
   <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
     <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
