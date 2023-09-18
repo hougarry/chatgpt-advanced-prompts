@@ -31,6 +31,16 @@
     </a>
 </p>
 
+## Table of Contents
+
+- [Introduction](#Introduction)
+- [Installation](#Installation)
+- [Advanced Commands](#Advanced-Commands)
+- [Examples](#Examples)
+- [FAQs](#FAQs)
+- [Contributing](#Contributing)
+- [License](#License)
+
 
 
 ## 📌 Introduction
@@ -51,15 +61,6 @@ The repository includes:
 
 Content is supplemented by the internet and contributions from the community, making it a valuable ChatGPT advanced prompt quick-reference manual. 🌟
 
-## Table of Contents
-
-- [Introduction](#Introduction)
-- [Installation](#Installation)
-- [Advanced Commands](#Advanced-Commands)
-- [Examples](#Examples)
-- [FAQs](#FAQs)
-- [Contributing](#Contributing)
-- [License](#License)
 
 ## Installation
 
