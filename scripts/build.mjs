@@ -60,8 +60,8 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'list.html'),
       {
         p: '/list.html',
-        n: '搜索',
-        d: '最专业的GPT高级命令大全，值得收藏的GPT高级命令速查手册。',
+        n: 'Search',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         command_length: jsonData.data.length
       }
     );
@@ -71,8 +71,8 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'hot.html'),
       {
         p: '/hot.html',
-        n: '搜索',
-        d: '最专业的GPT高级命令大全，值得收藏的GPT高级命令速查手册。',
+        n: 'Search',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。。',
         arr: jsonData.data,
         command_length: jsonData.data.length
       }
@@ -88,8 +88,8 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'contributors.html'),
       {
         p: '/contributors.html',
-        n: '搜索',
-        d: '最专业的GPT高级命令大全，值得收藏的GPT高级命令速查手册。',
+        n: 'Search',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         arr: jsonData.data,
         command_length: jsonData.data.length,
         contributors: svgStr,
