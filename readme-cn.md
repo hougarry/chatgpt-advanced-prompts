@@ -42,7 +42,11 @@
 
 ## 📌 简介
 
-本仓库致力于提供关于 ChatGPT 的高级 prompt 和创建高级 prompt 的指南。 📖,如果你有Prompt分享，欢迎通过 Pull Requests 或者在 Issues 区域进行提交。
+本仓库致力于提供关于 ChatGPT 的高级 prompt 和创建高级 prompt 的指南📖,
+
+只要你有一个高级Prompt分享，通过 Pull Requests 或者在 Issues 区域进行提交成为贡献者的一员。
+
+个人精力有限，advanced-prompts不是很多，支持添加多个合作和贡献者，拥抱开源精神！
 
 
 ## 📊 统计信息
