@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./images/logo.svg">
+    <img src="./img/logo.svg">
   </a>
   <h1>Chatgpt-Advanced-Prompts</h1>
 </p>
