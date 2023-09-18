@@ -52,7 +52,8 @@
 ## 📊 统计信息
 
 - 📚 **40+** ChatGPT 高级命令
-- 🌐 生成了一个无广告的 web 网站，方便使用 
+- 🌐 生成了一个无广告的 web 网站，方便使用
+- 🛄 Prompt 资源来自: Discord/Reddit/Youtube/Github/...
 
 ## 📚 内容
 
