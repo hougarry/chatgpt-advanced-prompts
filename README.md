@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://www.openai.com/gpt-4/">
-    <img src="./images/GPT-4-logo.svg">
+  <a href="https://prompt.garyhou2023.info/">
+    <img src="./images/logo.svg">
   </a>
-  <h1>Advanced GPT-4 Prompts</h1>
+  <h1>Chatgpt-Advanced-Prompts</h1>
 </p>
 
 ![License](https://img.shields.io/badge/License-MIT-blue)
@@ -21,6 +21,7 @@ This repository is your go-to resource for advanced GPT-4 prompts. Whether you'r
 - [Additional Resources](#additional-resources)
 
 #### Introduction
+
 An in-depth look at using advanced prompts with GPT-4 to achieve more precise and context-aware outputs.
 
 #### Installation
