@@ -1,12 +1,11 @@
 <p align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo">
+    <img src="./template/img/logo.svg" alt="Logo" width="100">
   </a>
 </p>
-<p align="center"> 🌟 ChatGPT 高级 Prompts 数据库 🌟
-  <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
-</p>
+<h1 align="center"> 🌟 ChatGPT 高级 Prompts 数据库 🌟</h1>
 <p align="center">
+    <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
     <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
     </a>
