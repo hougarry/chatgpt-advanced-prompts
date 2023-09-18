@@ -38,7 +38,6 @@
   <h1>ChatGPT-Advanced-Prompts</h1>
 </p>
 
-# 🌟 ChatGPT Advanced Prompt Repository 🌟
 
 ## 📌 Introduction
 
