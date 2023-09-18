@@ -1,14 +1,44 @@
 <p align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg">
+    <img src="./template/img/logo.svg" alt="Logo">
   </a>
-  <h1>Chatgpt-Advanced-Prompts</h1>
 </p>
 
-![License](https://img.shields.io/badge/License-MIT-blue)
-[![Blog](https://img.shields.io/badge/Blog-Myblog-purple)](https://blog.garyhou2023.info)
+<h1 align="center"># 🌟 ChatGPT 高级 Prompt 仓库 🌟</h1>
 
-# 🌟 ChatGPT 高级 Prompt 仓库 🌟
+<p align="center">
+  <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
+</p>
+
+<p align="center">
+  <em>
+    "A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
+  </em>
+</p>
+
+<p align="center">
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
+    </a>
+    <a href="https://blog.garyhou2023.info">
+    <img alt="Blog" src="https://img.shields.io/badge/Blog-Myblog-purple">
+    </a>
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
+    <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
+    </a>
+    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
+    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
+    </a>
+</p>
+
+<p align="center">
+  <a href="https://prompt.garyhou2023.info/">
+    <img src="./template/img/logo.svg">
+  </a>
+  <h1>ChatGPT-Advanced-Prompts</h1>
+</p>
+
+
 
 ## 📌 简介
 
