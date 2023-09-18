@@ -1,9 +1,9 @@
-<p align="center">
+<div align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo" width="80" height="80">
+    <img src="./template/img/logo.svg" alt="Logo" width="64" height="64" style="vertical-align: middle;">
   </a>
-</p>
-<h1 align="center" style="font-size: 2rem;">  ChatGPT 高级 Prompts 数据库 </h1>
+  <h1 style="font-size: 1.6rem; display: inline-block; vertical-align: middle;"> ChatGPT 高级 Prompts 数据库 </h1>
+</div>
 <p align="center">
   <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
 </p>
