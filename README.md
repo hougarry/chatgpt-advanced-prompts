@@ -31,34 +31,83 @@
     </a>
 </p>
 
-This repository is your go-to resource for advanced GPT-4 prompts. Whether you're a researcher, developer, or enthusiast, here you'll find comprehensive guides, explanations, and examples to elevate your GPT-4 experience. 
+<p align="center">
+  <a href="https://prompt.garyhou2023.info/">
+    <img src="./template/img/logo.svg">
+  </a>
+  <h1>ChatGPT-Advanced-Prompts</h1>
+</p>
 
-❗ Note: While efforts are made to ensure accuracy, we cannot guarantee that all content is up to date. Join our contributor as long as you upload 1 advanced prompt!
+# 🌟 ChatGPT Advanced Prompt Repository 🌟
 
-#### Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Advanced Prompt Techniques](#advanced-prompt-techniques)
-- [Community Contributions](#community-contributions)
-- [Additional Resources](#additional-resources)
+## 📌 Introduction
 
-#### Introduction
+This repository is dedicated to providing advanced prompts for ChatGPT and guidelines for creating advanced prompts. 📖 If you have prompts to share, feel free to submit them through Pull Requests or in the Issues section.
 
-An in-depth look at using advanced prompts with GPT-4 to achieve more precise and context-aware outputs.
+## 📊 Statistics
 
-#### Installation
-Step-by-step guide for setting up your environment to work with advanced GPT-4 prompts.
+- 📚 **40+** Advanced ChatGPT Commands
+- 🌐 Generated an ad-free web site for easy use
 
-#### Advanced Prompt Techniques
-- Temperature and Top-P
-- Prompt Engineering
-- System Tokens
+## 📚 Contents
 
-#### Community Contributions
-Share your discoveries and prompt techniques with the community.
+The repository includes:
+- 📘 Advanced ChatGPT Command Manual
+- 📙 Detailed Explanations
+- 📕 Prompt Learning Resources
 
-#### Additional Resources
-- [OpenAI Blog](https://www.openai.com/blog/)
-- [GPT-4 Research Paper](https://arxiv.org/abs/xxxx.xxxx)
-- [Community Forum](https://forum.openai.com)
+Content is supplemented by the internet and contributions from the community, making it a valuable ChatGPT advanced prompt quick-reference manual. 🌟
+
+## Table of Contents
+
+- [Introduction](#Introduction)
+- [Installation](#Installation)
+- [Advanced Commands](#Advanced-Commands)
+- [Examples](#Examples)
+- [FAQs](#FAQs)
+- [Contributing](#Contributing)
+- [License](#License)
+
+## Installation
+
+You can easily deploy the web version yourself; just clone the code from the `gh-pages` branch to your static server. Additionally, we also provide Docker and Vercel deployment methods.
+
+⚠️ If you decide to deploy your own static website version, consider adding a link to the original GitHub repository so that the command documentation can be collectively improved and enriched.
+
+### VPS Deployment
+
+### Docker Deployment
+
+### Vercel Deployment
+
+Click the button below for a one-click deployment to [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hougarry/chatgpt-advanced-prompts)
+
+## Advanced Commands
+
+## ⚖️ Legal Disclaimer
+
+- 📝 Copyright belongs to the original authors
+- ⚠️ This repository has no commercial purpose
+- 🚫 No liability for any legal issues or risks
+
+## 📬 Copyright Issues
+
+If you believe your copyright has been violated, please inform us. 💌
+
+## ⚠️ Disclaimer
+
+- 🛑 Content correctness is not fully guaranteed
+- 🚫 Any risks arising from the use of this site's content are not my responsibility
+
+## 📜 Terms of Use
+
+By using this site, you agree to its terms of use and privacy policy. ✅
+
+## Contributing
+
+## License
+
+This project is under the MIT License. Please refer to the `LICENSE` file in the repository for more information.
 
