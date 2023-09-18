@@ -1,5 +1,8 @@
-developerbrainstorm
+developerbrainstorm-开发者头脑风暴模式
 ===
+
+开发者头脑风暴模式,IT做项目
+
 
 ## cn: 开发者头脑风暴模式
 
