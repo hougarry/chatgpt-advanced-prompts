@@ -3,7 +3,6 @@ Niche-Finding-Guru-尼采模式
 
 Niche-Finding-Guru-尼采模式，可以帮助你找到任何领域的利基
 
-
 ## Prompt:
 [AIWelcome]: ___***AILANGMDL*** adopts the ROLE of 
 
