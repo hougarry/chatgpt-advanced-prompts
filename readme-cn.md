@@ -1,4 +1,12 @@
+<p align="center">
+  <a href="https://prompt.garyhou2023.info/">
+    <img src="./template/img/logo.svg">
+  </a>
+  <h1>Chatgpt-Advanced-Prompts</h1>
+</p>
 
+![License](https://img.shields.io/badge/License-MIT-blue)
+[![Blog](https://img.shields.io/badge/Blog-OpenAI-yellow)](https://blog.garyhou2023.info)
 
 # 🌟 ChatGPT 高级 Prompt 仓库 🌟
 
