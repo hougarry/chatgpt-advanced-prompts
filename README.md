@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center"># 🌟 ChatGPT 高级 Prompt 数据库 🌟</h1>
+<h1 align="center"># 🌟 ChatGPT 高级 Prompts 数据库 🌟</h1>
 
 <p align="center">
   <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
@@ -12,7 +12,7 @@
 
 <p align="center">
   <em>
-    "A GitHub repository dedicated to advanced usage and prompts for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
+    " 一个ChatGPT 高级Prompts的Web搜索数据库，支持一键部署Vercel，Docker和VPS。除了Prompts，还有Prompting Engineer的相关资料，免费开源！"
   </em>
 </p>
 
@@ -26,18 +26,9 @@
     <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
     <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white">
     </a>
-    <a href="https://github.com/hougarry/ChatGPT-Advanced-Prompts/releases" target="_blank">
     <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white">
     </a>
 </p>
-
-<p align="center">
-  <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg">
-  </a>
-  <h1>ChatGPT-Advanced-Prompts</h1>
-</p>
-
 
 
 ## 📌 简介
