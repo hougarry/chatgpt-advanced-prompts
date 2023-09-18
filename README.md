@@ -4,16 +4,10 @@
   </a>
 </p>
 
-<h1 align="center"># 🌟 ChatGPT 高级 Prompts 数据库 🌟</h1>
+<h1 align="center"> 🌟 ChatGPT 高级 Prompts 数据库 🌟</h1>
 
 <p align="center">
   <strong>中文</strong> | <a href="./readme-en.md"><strong>English</strong></a>
-</p>
-
-<p align="center">
-  <em>
-    " 一个ChatGPT 高级Prompts的Web搜索数据库，支持一键部署Vercel，Docker和VPS。除了Prompts，还有Prompting Engineer的相关资料，免费开源！"
-  </em>
 </p>
 
 <p align="center">
@@ -35,7 +29,7 @@
 
 本仓库致力于提供关于 ChatGPT 的高级 prompt 和创建高级 prompt 的指南📖,
 
-只要你有一个高级Prompt分享，通过 Pull Requests 或者在 Issues 区域进行提交成为贡献者的一员。
+仅需分享一个高级Prompt，你就可以通过 Pull Requests 或者在 Issues 区域进行提交成为贡献者的一员。
 
 个人精力有限，advanced-prompts不是很多，支持添加多个合作和贡献者，拥抱开源精神！
 
