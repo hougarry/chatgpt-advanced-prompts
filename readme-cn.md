@@ -6,7 +6,7 @@
 </p>
 
 ![License](https://img.shields.io/badge/License-MIT-blue)
-[![Blog](https://img.shields.io/badge/Blog-OpenAI-yellow)](https://blog.garyhou2023.info)
+[![Blog](https://img.shields.io/badge/Blog-Myblog-purple)](https://blog.garyhou2023.info)
 
 # 🌟 ChatGPT 高级 Prompt 仓库 🌟
 
