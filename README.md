@@ -51,7 +51,7 @@ This repository is dedicated to providing advanced prompts for ChatGPT and guide
 
 - 📚 **40+** Advanced ChatGPT Commands
 - 🌐 Generated an ad-free web site for easy use
-- Resource: Discord/Reddit/Youtube/Github/...
+- 🛄 Resources From: Discord/Reddit/Youtube/Github/...
 
 ## 📚 Contents
 
