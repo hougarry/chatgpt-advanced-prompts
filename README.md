@@ -27,6 +27,8 @@
 
 仅需分享一个高级Prompt，你就可以通过 Pull Requests 或者在 Issues 区域进行提交成为贡献者的一员。
 
+🟥  **出于对原Prompt创作者创新成果的尊重，会不断添加Prompt创始人的Socil links /GitHub links**
+
 个人精力有限，advanced-prompts不是很多，支持添加多个合作和贡献者，拥抱开源精神！
 
 
@@ -39,11 +41,12 @@
 ## 📚 内容
 
 该仓库包括：
-- 📘 ChatGPT 高级命令手册
-- 📙 详解
+- 📘 ChatGPT 高级命令创作指南（关键词搜索Prompt Create）
+- 📙 目前流行的各种高级prompt详解
 - 📕 Prompt学习资源
+- 📽️ 个人开发的advanced-prompt
 
-内容来自网络和网友的补充，是一个值得收藏的 ChatGPT 高级 prompt 速查手册。 🌟
+内容来自网络、个人创作和网友的补充，是一个值得收藏的 ChatGPT 高级 prompt 速查手册。 🌟
 
 
 ## 目录
