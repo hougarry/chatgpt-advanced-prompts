@@ -71,7 +71,7 @@ Click the button below for a one-click deployment to [Vercel](https://vercel.com
 | Role Name                     | Description                             |
 | ----------------------------- | --------------------------------------- |
 | AI Content Detection & Anti-Detection | AI content detection and counter-detection |
-| ChatGPT Dev Mode + Ranti       | ChatGPT developer mode for versatile GPT-3 tasks |
+| ChatGPT Dev Mode + Ranti       | ChatGPT developer mode for versatile GPT tasks |
 | CogniFlow Thought Modeling     | Advanced AI entity mapping human thought process |
 | English Tutor                 | Personalized English tutoring based on your level |
 | English Vocabulary Coach      | Vocabulary coaching with intelligent mnemonic generation |
@@ -90,7 +90,7 @@ Click the button below for a one-click deployment to [Vercel](https://vercel.com
 | Developer Brainstorm Mode     | IT project brainstorming, auto-generating experts and project evaluations |
 | Finance Consultant            | Finance domain expert, unlocking financial insights |
 | Gym Coach                     | Intelligent fitness plan generation, specializing in rehabilitation training |
-| Jailbreak Mode                | Empower GPT-3 to perform various tasks    |
+| Jailbreak Mode                | Empower GPT to perform various tasks    |
 | Omni-Expert                  | Solving problems in diverse fields, mastery in multiple domains |
 | Philosophy Master             | Discussing political issues and reasoning |
 | Latency Reduction with Skeleton of Thought Prompting | Reduce latency, enhance GPT's generation speed |
