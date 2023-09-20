@@ -46,6 +46,8 @@
 
 This repository is dedicated to providing advanced prompts for ChatGPT and guidelines for creating advanced prompts. 📖 If you have prompts to share, feel free to submit them through Pull Requests or in the Issues section.
 
+🟥 Out of respect for the original Prompt creator's innovative work, we will continuously add the Prompt founder's social links / GitHub links.
+
 ## 📊 Statistics
 
 - 📚 **40+** Advanced ChatGPT Commands
