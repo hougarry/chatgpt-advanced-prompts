@@ -1,14 +1,12 @@
-<p align="center">
+<div align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo" width="100">
+    <img src="./template/img/logo.svg" alt="Logo" width="64" height="64" style="vertical-align: middle;">
   </a>
-</p>
-<h1 align="center"># 🌟 ChatGPT-Advanced-Prompts 🌟</h1>
-
+  <h1 style="font-size: 1.6rem; display: inline-block; vertical-align: middle;"> ChatGPT-Advanced-Prompts-Database </h1>
+</div>
 <p align="center">
-  <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
+   <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
 </p>
-
 <p align="center">
   <em>
     "A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
@@ -16,6 +14,8 @@
 </p>
 
 
+
+---
 ## 📌 Introduction
 🟥 Kudos to the authors who have open-sourced advanced prompts!
 
