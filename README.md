@@ -27,7 +27,7 @@
 
 仅需分享一个高级Prompt，你就可以通过 Pull Requests 或者在 Issues 区域进行提交成为贡献者的一员。
 
-🟥  **出于对原Prompt创作者创新成果的尊重，会不断添加Prompt创始人的Socil links /GitHub links**
+🟥  **出于对原Prompt创作者创新成果的尊重，会不断添加Prompt创始人的Social links /GitHub links**
 
 个人精力有限，advanced-prompts不是很多，支持添加多个合作和贡献者，拥抱开源精神！
 
