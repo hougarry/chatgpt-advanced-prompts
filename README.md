@@ -13,9 +13,6 @@
   </em>
 </p>
 
-
-
----
 ## 📌 Introduction
 🟥 Kudos to the authors who have open-sourced advanced prompts!
 
@@ -68,6 +65,39 @@ Click the button below for a one-click deployment to [Vercel](https://vercel.com
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hougarry/chatgpt-advanced-prompts)
 
 ## Advanced Commands
+
+**English Version:**
+
+| Role Name                     | Description                             |
+| ----------------------------- | --------------------------------------- |
+| AI Content Detection & Anti-Detection | AI content detection and counter-detection |
+| ChatGPT Dev Mode + Ranti       | ChatGPT developer mode for versatile GPT-3 tasks |
+| CogniFlow Thought Modeling     | Advanced AI entity mapping human thought process |
+| English Tutor                 | Personalized English tutoring based on your level |
+| English Vocabulary Coach      | Vocabulary coaching with intelligent mnemonic generation |
+| GPT Dev Mode 2                | Developer mode version 2                |
+| Business Plan Generator       | Smart business plan generation to aid writing |
+| AI Teacher                    | Auto-generate outlines and content in any language |
+| Niche-Finding Guru            | Assistance in finding niches in any field |
+| GPT Command Element Designer  | Advanced command element design and usage |
+| Command God Mode              | Smart command generation to enhance detail |
+| Command Improvement           | Smart command generation to refine instructions |
+| SaucyGPT Sensual Content      | Intelligent sensual content generation (not for minors) |
+| UI Web Development Expert     | Proficient in web development, helping you create websites |
+| Yiqiu Prompts                 | Yiqiu prompts                           |
+| Blog Writer Assistant         | Smart article generation to assist writing |
+| Computer Expert               | IT and development expert, solving coding issues |
+| Developer Brainstorm Mode     | IT project brainstorming, auto-generating experts and project evaluations |
+| Finance Consultant            | Finance domain expert, unlocking financial insights |
+| Gym Coach                     | Intelligent fitness plan generation, specializing in rehabilitation training |
+| Jailbreak Mode                | Empower GPT-3 to perform various tasks    |
+| Omni-Expert                  | Solving problems in diverse fields, mastery in multiple domains |
+| Philosophy Master             | Discussing political issues and reasoning |
+| Latency Reduction with Skeleton of Thought Prompting | Reduce latency, enhance GPT's generation speed |
+| Translation Assistant         | Accurate translation generation, supporting multiple languages |
+| Unlock Picture Generation Mode | Intelligent image generation, unlocking various image formats |
+
+........more waiting!
 
 ## ⚖️ Legal Disclaimer
 
