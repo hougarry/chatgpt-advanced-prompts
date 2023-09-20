@@ -16,52 +16,44 @@
 </p>
 
 
-## Table of Contents
-
-- [Introduction](#Introduction)
-- [Installation](#Installation)
-- [Advanced Commands](#Advanced-Commands)
-- [Examples](#Examples)
-- [FAQs](#FAQs)
-- [Contributing](#Contributing)
-- [License](#License)
-
-
-
 ## 📌 Introduction
+🟥 Kudos to the authors who have open-sourced advanced prompts!
 
-Salute to the authors who open-source advanced prompts! 🙌
+🟥 **Out of respect for the original Prompt creators, we will continue to add the Prompt creators' Social links/GitHub links.**
 
-This repository is dedicated to providing advanced prompts for ChatGPT and guidelines for creating advanced prompts. 📖 If you have prompts to share, feel free to submit them through Pull Requests or in the Issues section.
+This repository is dedicated to providing advanced prompts for ChatGPT and a guide 📖 for creating such advanced prompts. 
 
-🟥 Out of respect for the original Prompt creator's innovative work, we will continuously add the Prompt founder's social links / GitHub links.
+You only need to share one advanced prompt and you can submit it through Pull Requests or in the Issues section to become a contributor.
 
+Given our limited individual resources, we don't have a plethora of advanced prompts. We are open to adding multiple collaborators and contributors. Embrace the open-source spirit!
 
 ## 📊 Statistics
 
-- 📚 **40+** Advanced ChatGPT Commands  (Bro, Quality > Quantity !)
-- 🌐 Generated an ad-free web site for easy use
-- 🛄 Resources From: Discord/Reddit/Youtube/Github/...
+- 📚 **40+** Advanced ChatGPT Commands
+- 🌐 Created an ad-free web platform for ease of use
+- 🛄 Resources sourced from: Discord/Reddit/Youtube/Github, etc.
 
-## 📚 Contents
+## 📚 Content
 
-The repository includes:
-- 📘 Advanced ChatGPT Command Manual
-- 📙 Detailed Explanations
-- 📕 Prompt Learning Resources
+This repository includes:
+- 📘 Guide to Creating Advanced ChatGPT Commands (Keyword Search: Prompt Create)
+- 📙 Detailed explanations of various popular advanced prompts
+- 📕 Resources for learning about prompts
+- 📽️ Personally developed advanced prompts
 
-Content is supplemented by the internet and contributions from the community, making it a valuable ChatGPT advanced prompt quick-reference manual. 🌟
+The content is sourced from the internet, personal creations, and contributions from the online community. It's a ChatGPT advanced prompt quick-reference manual worth bookmarking. 🌟
 
-If you need basic prompts, you can click here.
+If you are looking for basic prompts, you can click below:
 
-![Basic Prompts-Chinese Verison](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) : More than 13k starts
-![Basic Prompts-English-Version](https://github.com/f/awesome-chatgpt-prompts) : More than 88k starts 
+[awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) : More than 13k stars
+[awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) : More than 88k stars
 
-
+---
+Feel free to let me know if you have any other translation needs or questions.
 
 ## Installation
 
-You can easily deploy the web version yourself; just clone the code from the `gh-pages` branch to your static server. Additionally, we also provide Docker and Vercel deployment methods.
+You can easily deploy the web version yourself; just clone it to your vps. Additionally, we also provide Docker and Vercel deployment methods.
 
 ⚠️ If you decide to deploy your own static website version, consider adding a link to the original GitHub repository so that the command documentation can be collectively improved and enriched.
 
