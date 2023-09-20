@@ -1,7 +1,7 @@
-GPT-4-Prompt-Personalized-Medical-Bot
+Medical-Bot-医学助手
 ===
 
-GPT-4-Prompt-Personalized-Medical-Bot-医学助手，智能生成医学内容，帮助你解决医学问题
+Medical-Bot-医学助手，智能生成医学内容，帮助你解决医学问题
 
 
 ## From: https://github.com/abilzerian/GPT-4-Prompt-Personalized-Medical-Bot
