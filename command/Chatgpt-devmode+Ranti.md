@@ -1,7 +1,7 @@
-Chatgpt devmode+Ranti
+Chatgpt-devmode+Ranti
 ===
 
-Chatgpt devmode+Ranti,开发者模式，可以让你的GPT-3做任何事情
+Chatgpt-devmode+Ranti,开发者模式，可以让你的GPT-3做任何事情
 
 ## Prompt:
 
