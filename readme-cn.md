@@ -11,7 +11,10 @@
 
 
 ## 📌 简介
-🟥  向高级prompts开源的作者们致敬!
+
+🟥  **一键部署个人专属的chatgpt高级propmts数据库，[Demo](https://chatgpt-advanced-prompts-database.vercel.app/)**
+
+🟥  [《国内镜像》](https://chatgpt-advanced-prompts-database.vercel.app/)**
 
 🟥  **出于对原Prompt创作者创新成果的尊重，会不断添加Prompt创始人的Social links /GitHub links**
 
@@ -107,6 +110,9 @@
 | 减少延迟与思维提示骨架       | 减少延迟，提高GPT生成速度                 |
 | 翻译助手                    | 智能生成准确的翻译，支持多语言            |
 | 图片生成模式解锁            | 智能生成图片，解锁多种图片模式            |
+| 医学助手               | 智能生成医学内容，帮助你解决医学问题            |
+
+
 
 .....
 

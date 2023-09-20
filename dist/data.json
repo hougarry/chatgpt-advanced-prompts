@@ -118,6 +118,26 @@
     "n": "LANDING-PAGE-COPY-Builder-商业计划",
     "p": "LANDING-PAGE-COPY-Builder-商业计划",
     "d": "LANDING-PAGE-COPY-Builder-商业计划，智能生成商业计划，帮助你写作"
+  },
+  "Medical-bot-医学助手": {
+    "n": "GPT-4-Prompt-Personalized-Medical-Bot",
+    "p": "GPT-4-Prompt-Personalized-Medical-Bot",
+    "d": "GPT-4-Prompt-Personalized-Medical-Bot-医学助手，智能生成医学内容，帮助你解决医学问题"
+  },
+  "Jail-break-Dan-越狱模式": {
+    "n": "Jail-break-Dan-越狱模式",
+    "p": "Jail-break-Dan-越狱模式",
+    "d": "Jail-break-Dan-越狱模式,可以让你的GPT做任何事情"
+  },
+  "html-programming": {
+    "n": "html-programming",
+    "p": "Jhtml-programming",
+    "d": "html-programming,智能生成html代码,帮助你解锁html模式"
+  },
+  "midjourney-expert": {
+    "n": "midjourney-expert",
+    "p": "midjourney-expert",
+    "d": "midjourney-expert,generate a mid-journey prompt for GPT"
   }
 
  
