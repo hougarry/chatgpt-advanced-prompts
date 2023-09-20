@@ -18,6 +18,7 @@
 
 🟥 One-Click-Deploy Your Own Advanced ChatGPT-prompts-database by Vercel, like [Demo](https://chatgpt-advanced-prompts-database.vercel.app/)
 
+[《DEMO2》](https://chatgpt-advanced-prompts-database.vercel.app/)**
 
 🟥 **Out of respect for the original Prompt creators, we will continue to add the Prompt creators' Social links/GitHub links.**
 
