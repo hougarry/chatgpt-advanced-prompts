@@ -1,28 +1,31 @@
 <div align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo" width="64" height="64" style="vertical-align: middle;">
+    <img src="./template/img/logo.svg" alt="Logo" width="44" height="34" style="vertical-align: middle;">
   </a>
   <h1 style="font-size: 1.6rem; display: inline-block; vertical-align: middle;"> ChatGPT-Advanced-Prompts-Database </h1>
+  <p style="font-size: 1rem; color: #666; margin-top: 0.5rem;"> One-Click to get your ChatGPT-database without Programming. </p>
+    <p style="font-size: 1rem; color: #666; margin-top: 0.5rem;">一键免费部署你的ChatGPT高级提示词数据库。 </p>
+
+<strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a> 
+  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hougarry/chatgpt-advanced-prompts)
+
 </div>
-<p align="center">
-   <strong>English</strong> | <a href="./readme-cn.md"><strong>中文</strong></a>
-</p>
-<p align="center">
-  <em>
-    "A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt."
-  </em>
-</p>
+
+
 
 ## 📌 Introduction
 
 
-🟥 One-Click-Deploy Your Own Advanced ChatGPT-prompts-database by Vercel, like [Demo](https://chatgpt-advanced-prompts-database.vercel.app/)
+🟥 One-Click-Deploy Your Own Advanced ChatGPT-prompts-database by Vercel, like
 
-[《DEMO2》](https://chatgpt-advanced-prompts-database.vercel.app/)**
+[DEMO](https://chatgpt-advanced-prompts-database.vercel.app/)
+
+[DEMO2](https://chatgpt-advanced-prompts-database.vercel.app/)
 
 🟥 **Out of respect for the original Prompt creators, we will continue to add the Prompt creators' Social links/GitHub links.**
 
-This repository is dedicated to providing advanced prompts for ChatGPT and a guide 📖 for creating such advanced prompts. 
+    "A GitHub repository dedicated to advanced usage and commands for ChatGPT. Includes setup guides for web deployment, advanced-chatgpt-prompts database, and tutorials about how to design advanced prompt." 
 
 You only need to share one advanced prompt and you can submit it through Pull Requests or in the Issues section to become a contributor.
 
