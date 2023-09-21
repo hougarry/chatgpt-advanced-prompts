@@ -128,140 +128,140 @@ function indexOfCatch(a) {
     }
     /**搜索结果
      * @param  {boolean} islist 是否为列表*/
-      searchResult(islist = false) {
-        let arr = this.commands
-        const self = this
-        let page_size = arr.length
-        let arrResultHTML = []
-        const show_list_count = islist ? this.page_size : this.query_size;
-        let nameArr = [], desArr = [];
-        if (indexOfCatch(arr && arr.length && toString.call(arr).indexOf('Array'))) {
-          for (let i = 0; i < page_size; i++) {
-            if (!arr[i]) break;
-            const nIdx = self.isSreachIndexOF(arr[i].n, self.query);
-            const dIdx = self.isSreachIndexOF(arr[i].d, self.query);
-            let json = arr[i];
-            if (indexOfCatch(nIdx)) {
-              json.nIdx = nIdx;
-              nameArr.push(json);
-            } else if (indexOfCatch(dIdx)) {
-              json.dIdx = dIdx;
-              desArr.push(json);
-            }
+    searchResult(islist = false) {
+      let arr = this.commands
+      const self = this
+      let page_size = arr.length
+      let arrResultHTML = []
+      const show_list_count = islist ? this.page_size : this.query_size;
+      let nameArr = [], desArr = [];
+      if (indexOfCatch(arr && arr.length && toString.call(arr).indexOf('Array'))) {
+        for (let i = 0; i < page_size; i++) {
+          if (!arr[i]) break;
+          const nIdx = self.isSreachIndexOF(arr[i].n, self.query);
+          const dIdx = self.isSreachIndexOF(arr[i].d, self.query);
+          let json = arr[i];
+          if (indexOfCatch(nIdx)) {
+            json.nIdx = nIdx;
+            nameArr.push(json);
+          } else if (indexOfCatch(dIdx)) {
+            json.dIdx = dIdx;
+            desArr.push(json);
           }
         }
-        nameArr.sort(sortArray);
-        desArr.sort(sortArray);
-  
-  
-        const resultData = nameArr.concat(desArr).slice(0, show_list_count);
-        resultData.forEach(a => {
-          arrResultHTML.push(self.createKeyworldsHTML(a, self.query, islist));
-        })
-  
-        /** @type {HTMLElement} */
-        let elm = islist ? this.elm_search_result : this.elm_result;
-        elm.innerHTML = ''
-        arrResultHTML.forEach((result, i) => {
-          const el = document.createElement('li')
-          el.innerHTML = result
-          elm.appendChild(el);
-        })
-        if (!arrResultHTML.length) {
-          const noResultTipHTML = document.createElement("LI");
-          const tipSpan = document.createElement("span")
-          const nullQueryStringTips = `请尝试输入一些字符，进行搜索！`
-          const undefinedQueryTips = `没有搜索到任何内容，请尝试输入其它字符！`
-          tipSpan.innerText = this.query ? undefinedQueryTips : nullQueryStringTips
-          noResultTipHTML.appendChild(tipSpan);
-          elm.appendChild(noResultTipHTML);
-        }
       }
-      /**
-       * 移动搜索结果的光标
-       * @param {"up"|"down"} type 触发事件类型
-       * @memberof Commands
-       */
-      selectedResult(type) {
-        /** @type {Array} */
-        let items = this.elm_result.children;
-        let index = 0;
-        for (var i = 0; i < items.length; i++) {
-          if (items[i].className == 'ok') {
-            items[i].className = '';
-            if (type == 'up') index = i - 1;
-            else index = i + 1;
-            break;
-          };
-        };
-        if (items[index]) items[index].className = 'ok';
-      }
-      // 是否选中搜索结果
-      isSelectedResult() {
-        let items = this.elm_result.children;
-        let isSel = false;
-        for (let i = 0; i < items.length; i++) {
-          if (items[i].className == 'ok') {
-            isSel = items[i];
-            break;
-          };
-        };
-        return isSel;
-      }
-      init() {
-        /**
-         * 设定搜索结果的 CSS display 属性
-         *
-         * @param {string} [inputDisplay='none']
-         */
-        function setdisplay(inputDisplay) {
-          self.elm_result.style.display = inputDisplay || 'none'
-        }
-        let self = this;
-        let kw = self.getQueryString('kw');
-        this.elm_query.value = kw;
-        this.query = kw || '';
-        if (this.elm_search_result) self.searchResult(true);
-        this.bindEvent(this.elm_query, 'input', function (e) {
-          self.query = e.target.value;
-          self.pushState()
-          if (self.query) {
-            self.searchResult();
-          } else {
-            setdisplay()
-          }
-          if (!self.elm_search_result) {
-            setdisplay(self.query ? 'block' : 'none')
-          } else {
-            self.elm_btn.click();
-          }
-        })
-        this.bindEvent(this.elm_btn, 'click', function (e) {
-          setdisplay();
-          if (self.elm_search_result) self.searchResult(true);
-          else window.location.href = self.root_path + '/list.html#!kw=' + self.query;
-        })
-        this.bindEvent(this.elm_query, 'focus', function (e) {
-          self.searchResult();
-          if (self.query) setdisplay('block');
-        })
-        this.bindEvent(this.elm_query, 'blur', function (e) {
-          setTimeout(function () {
-            setdisplay();
-          }, 300)
-        })
-        // 输入Enter键
-        this.bindEvent(document, 'keyup', function (e) {
-          if (e.keyCode === 40) self.selectedResult("down");
-          if (e.keyCode === 38) self.selectedResult("up");
-          if (e.key == 'Enter') {
-            let item = self.isSelectedResult();
-            if (!item) return self.elm_btn.click();
-            if (item.children[0]) item.children[0].click();
-          }
-        })
-        if (kw) self.searchResult();
+      nameArr.sort(sortArray);
+      desArr.sort(sortArray);
+
+
+      const resultData = nameArr.concat(desArr).slice(0, show_list_count);
+      resultData.forEach(a => {
+        arrResultHTML.push(self.createKeyworldsHTML(a, self.query, islist));
+      })
+
+      /** @type {HTMLElement} */
+      let elm = islist ? this.elm_search_result : this.elm_result;
+      elm.innerHTML = ''
+      arrResultHTML.forEach((result, i) => {
+        const el = document.createElement('li')
+        el.innerHTML = result
+        elm.appendChild(el);
+      })
+      if (!arrResultHTML.length) {
+        const noResultTipHTML = document.createElement("LI");
+        const tipSpan = document.createElement("span")
+        const nullQueryStringTips = `请尝试输入一些字符，进行搜索！`
+        const undefinedQueryTips = `没有搜索到任何内容，请尝试输入其它字符！`
+        tipSpan.innerText = this.query ? undefinedQueryTips : nullQueryStringTips
+        noResultTipHTML.appendChild(tipSpan);
+        elm.appendChild(noResultTipHTML);
       }
     }
-    new Commands()
-  })()
+    /**
+     * 移动搜索结果的光标
+     * @param {"up"|"down"} type 触发事件类型
+     * @memberof Commands
+     */
+    selectedResult(type) {
+      /** @type {Array} */
+      let items = this.elm_result.children;
+      let index = 0;
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].className == 'ok') {
+          items[i].className = '';
+          if (type == 'up') index = i - 1;
+          else index = i + 1;
+          break;
+        };
+      };
+      if (items[index]) items[index].className = 'ok';
+    }
+    // 是否选中搜索结果
+    isSelectedResult() {
+      let items = this.elm_result.children;
+      let isSel = false;
+      for (let i = 0; i < items.length; i++) {
+        if (items[i].className == 'ok') {
+          isSel = items[i];
+          break;
+        };
+      };
+      return isSel;
+    }
+    init() {
+      /**
+       * 设定搜索结果的 CSS display 属性
+       *
+       * @param {string} [inputDisplay='none']
+       */
+      function setdisplay(inputDisplay) {
+        self.elm_result.style.display = inputDisplay || 'none'
+      }
+      let self = this;
+      let kw = self.getQueryString('kw');
+      this.elm_query.value = kw;
+      this.query = kw || '';
+      if (this.elm_search_result) self.searchResult(true);
+      this.bindEvent(this.elm_query, 'input', function (e) {
+        self.query = e.target.value;
+        self.pushState()
+        if (self.query) {
+          self.searchResult();
+        } else {
+          setdisplay()
+        }
+        if (!self.elm_search_result) {
+          setdisplay(self.query ? 'block' : 'none')
+        } else {
+          self.elm_btn.click();
+        }
+      })
+      this.bindEvent(this.elm_btn, 'click', function (e) {
+        setdisplay();
+        if (self.elm_search_result) self.searchResult(true);
+        else window.location.href = self.root_path + '/list.html#!kw=' + self.query;
+      })
+      this.bindEvent(this.elm_query, 'focus', function (e) {
+        self.searchResult();
+        if (self.query) setdisplay('block');
+      })
+      this.bindEvent(this.elm_query, 'blur', function (e) {
+        setTimeout(function () {
+          setdisplay();
+        }, 300)
+      })
+      // 输入Enter键
+      this.bindEvent(document, 'keyup', function (e) {
+        if (e.keyCode === 40) self.selectedResult("down");
+        if (e.keyCode === 38) self.selectedResult("up");
+        if (e.key == 'Enter') {
+          let item = self.isSelectedResult();
+          if (!item) return self.elm_btn.click();
+          if (item.children[0]) item.children[0].click();
+        }
+      })
+      if (kw) self.searchResult();
+    }
+  }
+  new Commands()
+})()
