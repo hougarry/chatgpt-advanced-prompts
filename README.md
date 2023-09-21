@@ -47,10 +47,10 @@ The content is sourced from the internet, personal creations, and contributions 
 If you are looking for basic prompts, you can click below:
 
 [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) : More than 13k stars
+
 [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) : More than 88k stars
 
----
-Feel free to let me know if you have any other translation needs or questions.
+
 
 ## Installation
 

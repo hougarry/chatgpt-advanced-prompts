@@ -43,8 +43,9 @@
 
 如果你需要基本prompt，你可以点击以下：
 
-![Basic Prompts-Chinese Verison](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) : More than 13k starts
-![Basic Prompts-English-Version](https://github.com/f/awesome-chatgpt-prompts) : More than 88k starts 
+[Basic Prompts-Chinese Verison](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) : More than 13k starts
+
+[Basic Prompts-English-Version](https://github.com/f/awesome-chatgpt-prompts) : More than 88k starts 
 
 
 
