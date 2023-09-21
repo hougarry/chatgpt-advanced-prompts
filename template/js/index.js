@@ -1,133 +1,161 @@
 /**
-* 对数组进行排序，作为 Array.sort() 回调函数使用
-*/
+/**
+ * Callback function for sorting an array.
+ * Used with Array.sort().
+ */
 const sortArray = function (a, b) {
-    return a.nIdx - b.nIdx;
-  }
+  return a.nIdx - b.nIdx;
+}
   /**
-   * 判断 indexOf() 是否捕获到了搜索词
-   * @returns {boolean} 是否捕获
-   */
+  * Determine if the 'indexOf()' method captures a search term.
+   * @returns {boolean} - Returns true if captured, otherwise false.
+  */
   function indexOfCatch(a) {
-    return a > -1
+    return a > -1;
   }
+
   (function () {
     class Commands {
-      query = ''
-      query_size = 5 //搜索框结果显示5条
-      page_size = 50 //每页显示20条
+      query = '';
+      query_size = 5; // Number of search results to display in the search box
+      page_size = 50; // Number of items to display per page
+
+      // Shortcut function to get elements by ID
       $$(id) {
-        return document.getElementById(id)
+            return document.getElementById(id);
       }
+
+      // Get the root path
+
       constructor() {
         function $$(id) {
-          return document.getElementById(id)
+            return document.getElementById(id);
         }
+
+        // Initialize 'commands' property with 'linux_commands' data or an empty array
         this.commands = linux_commands || [];
-        this.elm_query = $$('query');
-        this.elm_btn = $$('search_btn');
-        this.elm_result = $$('result');
-        this.elm_search_result = $$('search_list_result');
-  
-        // 获取根路径
-        this.root_path = (function () {
-          let elm_path = $$('current_path');
-          let url = window.location.origin + window.location.pathname;
-          return elm_path ? url.replace(/\/(c\/)?(\w|-)+\.html/, '').replace(/\/$/, '') : '';
-        })();
-  
-        this.init();
-        this.goToIndex();
-      }
+
+          // Get references to HTML elements by ID
+            this.elm_query = $$('query');
+            this.elm_btn = $$('search_btn');
+            this.elm_result = $$('result');
+            this.elm_search_result = $$('search_list_result');
+
+            // Determine the root path based on the current URL
+            this.root_path = (function () {
+            let elm_path = $$('current_path');
+            let url = window.location.origin + window.location.pathname;
+                return elm_path ? url.replace(/\/(c\/)?(\w|-)+\.html/, '').replace(/\/$/, '') : '';
+            })();
+
+            // Initialize the search functionality
+            this.init();
+
+            // Modify links on the page to navigate to the homepage
+            this.goToIndex();
+        }
       /**
-       * 前往主页
-       * @memberof Commands
-       */
-      goToIndex() {
-        let elma = document.getElementsByTagName('A');
-        for (let i = 0; i < elma.length; i++) {
-          if (elma[i].pathname === '/' && !/^https?:/i.test(elma[i].protocol)) {
-            elma[i].href = this.root_path + '/';
+        /**
+         * Navigate to the homepage by modifying links.
+         */
+        goToIndex() {
+          let elma = document.getElementsByTagName('A');
+          for (let i = 0; i < elma.length; i++) {
+              if (elma[i].pathname === '/' && !/^https?:/i.test(elma[i].protocol)) {
+                  elma[i].href = this.root_path + '/';
+              }
           }
-        }
       }
-      /**
-       * 绑定事件
-       * 该函数有兼容性处理
-       * @param {HTMLElement} element 需要绑定事件的元素
-       * @param {*} type 需要绑定的类型
-       * @param {*} callback 事件触发回调
-       * @memberof Commands
-       */
+        /**
+         * Bind an event listener to an element with compatibility handling.
+         * @param {HTMLElement} element - The element to bind the event to.
+         * @param {string} type - The type of event to bind.
+         * @param {function} callback - The callback function to execute when the event occurs.
+         */
       bindEvent(element, type, callback) {
-        if (element.addEventListener) {
-          element.addEventListener(type, callback, false);
-        } else if (element.attachEvent) {
-          element.attachEvent('on' + type, callback);
-        }
+          if (element.addEventListener) {
+              element.addEventListener(type, callback, false);
+          } else if (element.attachEvent) {
+              element.attachEvent('on' + type, callback);
+          }
       }
+      
       isSreachIndexOF(oldstr, kw) {
         if (!oldstr || !kw) return -1;
         return oldstr.toLowerCase().indexOf(kw.toLowerCase());
       }
-      //获取URL上面的参数
+      // Get a URL parameter by name
       getQueryString(name) {
-        let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-        let r = decodeURIComponent(window.location.hash.replace(/^(\#\!|\#)/, '')).match(reg);
-        if (r != null) return unescape(r[2]); return null;
+      // Create a regular expression to match the parameter name in the URL
+      let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+      // Decode the URL and search for the parameter using the regular expression
+      let r = decodeURIComponent(window.location.hash.replace(/^(\#\!|\#)/, '')).match(reg);
+      // If the parameter is found, return its value; otherwise, return null
+      if (r != null) return unescape(r[2]);
+      return null;
       }
-      /**
-       * 通过 window.history 设置地址栏的地址
-       * @memberof Commands
-       */
+
+/**
+* Update the address bar in the browser using window.history.
+* @memberof Commands
+*/
       pushState() {
-        if (window.history && window.history.pushState)
-          if (this.query) {
-            history.pushState({}, "linux_commands", `#!kw=${this.query}`)
-          } else {
-            history.pushState({}, "linux_commands", window.location.pathname);
-          }
+      // Check if the browser supports the history API
+      if (window.history && window.history.pushState) {
+      // If a search query exists, update the URL with the query as a hash
+      if (this.query) {
+          history.pushState({}, "linux_commands", `#!kw=${this.query}`);
+      } else {
+          // If no search query exists, revert the URL to its original state (no hash)
+          history.pushState({}, "linux_commands", window.location.pathname);
       }
-      /**
-       * 一个简单的模板函数
-       *
-       * @param {string} str 传入的 HTML 模板
-       * @param {object} obj 一个对象，用于放置在 HTML 模板中
-       * @return {string} 经过处理的 HTML 模板 
-       * @memberof Commands
-       */
-      simple(str, obj) {
+  }
+}
+
+        /**
+        * A simple template function to replace placeholders in an HTML template with values from an object.
+        * @param {string} str - The HTML template string.
+        * @param {object} obj - An object containing values to replace in the template.
+        * @return {string} - The processed HTML template.
+        * @memberof Commands
+        */
+        simple(str, obj) {
         return str.replace(/\$\w+\$/gi, function (matchs) {
-          let returns = obj[matchs.replace(/\$/g, "")];
-          return typeof returns === "undefined" ? "" : returns;
-        })
-      }
-      /**创建 keyworlds HTML
-       * @param {*} json 根据这段 JSON 生成
-       * @param {*} keywolds 关键字
-       * @param {*} islist 表示这是否是一个列表
-       * @return {*} 返回一个 HTML 字符串
-       */
-      createKeyworldsHTML(json, keywolds, islist) {
-        const listHTML = '<p></p>'
-        const replaceHTML = `<i class="kw">$1</i>`
-        let name = json.n
-        let des = json.d
-        let reg = new RegExp(`(${keywolds})`, "ig")
-        if (keywolds) {
-          name = json.n.replace(reg, replaceHTML);
-          des = json.d.replace(reg, replaceHTML) || '';
+        let returns = obj[matchs.replace(/\$/g, "")];
+        return typeof returns === "undefined" ? "" : returns;
+  });
+}
+
+/**
+* Create HTML content for keywords.
+* @param {*} json - The JSON data to generate content from.
+* @param {*} keywords - The search keywords.
+* @param {*} islist - Indicates if this is for a list.
+* @return {*} - An HTML string.
+*/
+createKeyworldsHTML(json, keywords, islist) {
+  // HTML templates for list and regular items
+        const listHTML = '<p></p>';
+        const replaceHTML = `<i class="kw">$1</i>`;
+        let name = json.n;
+        let des = json.d;
+        let reg = new RegExp(`(${keywords})`, "ig");
+        if (keywords) {
+            name = json.n.replace(reg, replaceHTML);
+              des = json.d.replace(reg, replaceHTML) || '';
         }
         let rootp = this.root_path.replace(/\/$/, '');
-        const str = `<a href="${rootp}/c$url$.html"><strong>$name$</strong> - $des$</a>${islist ? listHTML : ''}`
+        // Construct the HTML string
+        const str = `<a href="${rootp}/c$url$.html"><strong>$name$</strong> - $des$</a>${islist ? listHTML : ''}`;
         return this.simple(str, {
-          name,
-          url: json.p,
-          des
-        });
-      }
-      /**搜索结果
-       * @param  {boolean} islist 是否为列表*/
+        name,
+        url: json.p,
+        des
+      });
+}
+
+      /**render search result
+       * @param  {boolean} islist whether it's a list*/
       searchResult(islist = false) {
         let arr = this.commands
         const self = this

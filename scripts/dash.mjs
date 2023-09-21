@@ -1,11 +1,13 @@
+// Import necessary modules and libraries
 import fs from 'fs-extra';
 import path from 'path';
 import { resolve as pathResolve, join as pathJoin } from 'path';
 import sqlite3 from 'sqlite3';
-import {tgz} from 'compressing';
-import { spawn } from 'child_process';
-import {fileURLToPath} from 'url';
+import { tgz } from 'compressing'; // Import the 'compressing' library for compressing files
+import { spawn } from 'child_process'; // Import 'spawn' from the 'child_process' module for executing shell commands
+import { fileURLToPath } from 'url';
 
+// Define file paths and directories
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pkg = fs.readJSONSync(pathResolve(__dirname, '../package.json'));
@@ -28,30 +30,33 @@ const RESOURCES_DIR = `${DOCSET_DIR}/Contents/Resources/`;
 const DB_PATH = `${DOCSET_DIR}/Contents/Resources/docSet.dsidx`;
 const DIR_STRUCT = `${DOCSET_DIR}/Contents/Resources/Documents/`;
 
+// Define PLIST and ICON data for creating documentation set
 const PLIST = {
   dist: `${DOCSET_DIR}/Contents/Info.plist`,
   content: `
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>CFBundleIdentifier</key>
-  <string>DOC_NAME</string>
-  <key>CFBundleName</key>
-  <string>DOC_NAME</string>
-  <key>DocSetPlatformFamily</key>
-  <string>DOC_NAME</string>
-  <key>isDashDocset</key>
-  <true/>
-</dict>
-</plist>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>DOC_NAME</string>
+      <key>CFBundleName</key>
+      <string>DOC_NAME</string>
+      <key>DocSetPlatformFamily</key>
+      <string>DOC_NAME</string>
+      <key>isDashDocset</key>
+      <true/>
+    </dict>
+    </plist>
   `,
 };
+
 const ICON = {
   dist: `${DOCSET_DIR}/icon.png`,
   src: `${DATA_DIR}/dash-icon.png`,
 };
 
+// Function to create the SQLite database
 function createDatabase(apiList, dbPath) {
   const db = new sqlite3.Database(dbPath);
 
@@ -71,6 +76,7 @@ function createDatabase(apiList, dbPath) {
   db.close();
 }
 
+// Function to clean up previous builds
 async function clean() {
   console.info('========= do clean =========');
   try {
@@ -78,6 +84,7 @@ async function clean() {
   } catch (e) {}
 }
 
+// Function to copy required resources
 async function copyResource() {
   await fs.copy(ICON.src, ICON.dist);
   await fs.writeFile(PLIST.dist, PLIST.content.replace(/DOC_NAME/gi, DOC_NAME));
@@ -87,6 +94,7 @@ async function copyResource() {
   }
 }
 
+// Function to get the documentation index
 async function getIndex() {
   let obj = await fs.readJSON(INDEX_JSON_PATH, { encoding: 'utf8' });
 
@@ -99,12 +107,13 @@ async function getIndex() {
   });
 }
 
+// Function to build the SQLite database for documentation
 async function buildApi(dbPath) {
   let arr = await getIndex();
   await createDatabase(arr, dbPath);
 }
 
-
+// Main build function
 async function build() {
   console.log(`mkdir -p ${RESOURCES_DIR}`);
   await clean();
@@ -122,6 +131,7 @@ async function build() {
   await tgz.compressDir(DOCSET_DIR, outputPath);
 }
 
+// Trigger the build process and handle any errors
 build()
   .then(() => {
     console.info(`file at ${DOCSET_DIR}`);
