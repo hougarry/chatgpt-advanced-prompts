@@ -26,7 +26,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
     
     await FS.copyFile(path.resolve(process.cwd(), 'template', 'js', 'copy-to-clipboard.js'), path.resolve(deployDir, 'js', 'copy-to-clipboard.js'));
     await FS.copyFile(path.resolve(process.cwd(), 'node_modules/@wcj/dark-mode/main.js'), path.resolve(deployDir, 'js', 'dark-mode.min.js'));
-    await FS.copyFile(path.resolve(process.cwd(), 'node_modules/react-github-btn/index.js'), path.resolve(deployDir, 'js', 'react-github-btn.js'));
+    await FS.copyFile(path.resolve(process.cwd(), 'node_modules/github-corner-element/dist/github-corner-element.es.js'), path.resolve(deployDir, 'js', 'github-corner-element.js'));
 
     const jsData = await FS.readFileSync(rootIndexJSPath);
     await FS.outputFile(path.resolve(deployDir, 'js', 'index.js'), UglifyJS.minify(jsData.toString()).code)
