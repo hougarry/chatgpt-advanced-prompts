@@ -1,12 +1,16 @@
 <div align="center">
   <a href="https://prompt.garyhou2023.info/">
-    <img src="./template/img/logo.svg" alt="Logo" width="64" height="64" style="vertical-align: middle;">
+    <img src="./template/img/logo.svg" alt="Logo" width="44" height="34" style="vertical-align: middle;">
   </a>
-  <h1 style="font-size: 1.6rem; display: inline-block; vertical-align: middle;"> ChatGPT 高级 Prompts 数据库 </h1>
+  <h1 style="font-size: 1.6rem; display: inline-block; vertical-align: middle;"> ChatGPT-Advanced-Prompts-Database </h1>
+  <p style="font-size: 1rem; color: #666; margin-top: 0.5rem;"> One-Click to get your ChatGPT-database without Programming. </p>
+    <p style="font-size: 1rem; color: #666; margin-top: 0.5rem;">一键免费部署你的ChatGPT高级提示词数据库。 </p>
+
+  <strong>中文</strong> | <a href="./readme.md"><strong>English</strong></a> 
+  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hougarry/chatgpt-advanced-prompts)
+
 </div>
-<p align="center">
-  <strong>中文</strong> | <a href="./readme.md"><strong>English</strong></a>
-</p>
 
 
 
@@ -14,7 +18,7 @@
 
 🟥  **一键部署个人专属的chatgpt高级propmts数据库，[Demo](https://chatgpt-advanced-prompts-database.vercel.app/)**
 
-🟥  [《国内镜像》](https://chatgpt-advanced-prompts-database.vercel.app/)**
+🟥  [[国内镜像]](https://chatgpt-advanced-prompts-database.vercel.app/)
 
 🟥  **出于对原Prompt创作者创新成果的尊重，会不断添加Prompt创始人的Social links /GitHub links**
 
