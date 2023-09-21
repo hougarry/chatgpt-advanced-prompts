@@ -6,60 +6,44 @@ import UglifyJS from 'uglify-js';
 import { create } from 'markdown-to-html-cli';
 import _ from 'colors-cli/toxic';
 
-// Define paths to various files and directories
-const deployDir = path.resolve(process.cwd(), '.deploy'); // Deployment directory
-const faviconPath = path.resolve(process.cwd(), 'template', 'img', 'favicon.ico'); // Path to favicon
-const rootIndexJSPath = path.resolve(process.cwd(), 'template', 'js', 'index.js'); // Path to root index.js
-const dataJsonPath = path.resolve(process.cwd(), 'dist', 'data.json'); // Path to data.json
-const dataJsonMinPath = path.resolve(process.cwd(), 'dist', 'data.min.json'); // Path to data.min.json
-const cssPath = path.resolve(deployDir, 'css', 'index.css'); // Path to CSS file
-const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg'); // Path to CONTRIBUTORS.svg
+const deployDir = path.resolve(process.cwd(), '.deploy');
+const faviconPath = path.resolve(process.cwd(), 'template', 'img', 'favicon.ico');
+const rootIndexJSPath = path.resolve(process.cwd(), 'template', 'js', 'index.js');
+const dataJsonPath = path.resolve(process.cwd(), 'dist', 'data.json');
+const dataJsonMinPath = path.resolve(process.cwd(), 'dist', 'data.min.json');
+const cssPath = path.resolve(deployDir, 'css', 'index.css');
+const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
 
-// Anonymous async function to perform various tasks
 ;(async () => {
   try {
-    // Ensure the deployment directory exists and is empty
     await FS.ensureDir(deployDir);
     await FS.emptyDir(deployDir);
-
-    // Create necessary subdirectories
     await FS.ensureDir(path.resolve(deployDir, 'img'));
     await FS.ensureDir(path.resolve(deployDir, 'js'));
     await FS.ensureDir(path.resolve(deployDir, 'css'));
     await FS.ensureDir(path.resolve(deployDir, 'c'));
-
-    // Copy favicon.ico to the deployment directory
     await FS.copySync(faviconPath, path.resolve(deployDir, 'img', 'favicon.ico'));
     
-    // Copy various JavaScript files to the deployment directory
     await FS.copyFile(path.resolve(process.cwd(), 'template', 'js', 'copy-to-clipboard.js'), path.resolve(deployDir, 'js', 'copy-to-clipboard.js'));
     await FS.copyFile(path.resolve(process.cwd(), 'node_modules/@wcj/dark-mode/main.js'), path.resolve(deployDir, 'js', 'dark-mode.min.js'));
     await FS.copyFile(path.resolve(process.cwd(), 'node_modules/@uiw/github-corners/lib/index.js'), path.resolve(deployDir, 'js', 'github-corners.js'));
 
-    // Minify and copy the root index.js to the deployment directory
     const jsData = await FS.readFileSync(rootIndexJSPath);
-    await FS.outputFile(path.resolve(deployDir, 'js', 'index.js'), UglifyJS.minify(jsData.toString()).code);
-
-    // Read and process Markdown files, generating data JSON
+    await FS.outputFile(path.resolve(deployDir, 'js', 'index.js'), UglifyJS.minify(jsData.toString()).code)
     const files = await readMarkdownPaths(path.resolve(process.cwd(), 'command'));
     const jsonData = await createDataJSON(files);
-
-    // Write data JSON and related files
     await FS.outputFile(dataJsonPath, JSON.stringify(jsonData.json, null, 2));
     await FS.outputFile(dataJsonMinPath, JSON.stringify(jsonData.json));
     await FS.outputFile(path.resolve(deployDir, 'js', 'dt.js'), `var linux_commands=${JSON.stringify(jsonData.data)}`);
 
-    // Create and compile Stylus to CSS
     const cssStr = await createStylToCss(
       path.resolve(process.cwd(), 'template', 'styl', 'index.styl'),
       path.resolve(deployDir, 'css', 'index.css'),
     );
 
-    // Write the generated CSS to the deployment directory
-    await FS.outputFileSync(cssPath, cssStr);
-    console.log(`  ${'→'.green} ${jsonData.data.length}`);
+    await FS.outputFileSync(cssPath, cssStr)
+    console.log(`  ${'→'.green} ${jsonData.data.length}`)
 
-    // Generate HTML files from EJS templates
     await createTmpToHTML(
       path.resolve(process.cwd(), 'template', 'index.ejs'),
       path.resolve(deployDir, 'index.html'),
@@ -71,15 +55,34 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg'); // Pat
       }
     );
 
-    // ... More HTML generation steps ...
+    await createTmpToHTML(
+      path.resolve(process.cwd(), 'template', 'list.ejs'),
+      path.resolve(deployDir, 'list.html'),
+      {
+        p: '/list.html',
+        n: 'Search',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
+        command_length: jsonData.data.length
+      }
+    );
 
-    // Read CONTRIBUTORS.svg and include it in one of the HTML templates
+    await createTmpToHTML(
+      path.resolve(process.cwd(), 'template', 'hot.ejs'),
+      path.resolve(deployDir, 'hot.html'),
+      {
+        p: '/hot.html',
+        n: 'Search',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。。',
+        arr: jsonData.data,
+        command_length: jsonData.data.length
+      }
+    );
+
     let svgStr = '';
     if (FS.existsSync(contributorsPath)) {
       svgStr = (await FS.readFile(contributorsPath)).toString();
     }
 
-    // Include CONTRIBUTORS.svg in an HTML template
     await createTmpToHTML(
       path.resolve(process.cwd(), 'template', 'contributors.ejs'),
       path.resolve(deployDir, 'contributors.html'),
@@ -92,8 +95,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg'); // Pat
         contributors: svgStr,
       }
     );
-
-    // Generate individual HTML files for each command or prompt
+    
     await Promise.all(jsonData.data.map(async (item, idx) => {
       item.command_length = jsonData.data.length;
       await createTmpToHTML(
@@ -114,10 +116,10 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg'); // Pat
 })();
 
 /**
- * Returns an array of paths for all Markdown files.
+ * 返回 MD 所有路径的 Array
  * @param {String} filepath 
  */
-function readMarkdownPaths(filepath) {
+ function readMarkdownPaths(filepath) {
   return new Promise((resolve, reject) => {
     try {
       let pathAll = [];
@@ -184,77 +186,48 @@ function createDataJSON(pathArr) {
     }
   });
 }
+
+
 /**
- * Create HTML files from EJS templates.
- * @param {String} fromPath EJS template path
- * @param {String} toPath HTML output path
- * @param {Object} desJson Data to pass to the template
- * @param {String} mdPath Path to Markdown files
+ * @param {String} fromPath ejs path
+ * @param {String} toPath html path
  */
-/**
- * Create HTML files from EJS templates.
- * @param {String} fromPath EJS template path
- * @param {String} toPath HTML output path
- * @param {Object} desJson Data to pass to the template
- * @param {String} mdPath Path to Markdown files
- */
-async function createTmpToHTML(fromPath, toPath, desJson, mdPath) {
-  try {
-    // Replace the `deployDir` part of `toPath` with an empty string to get the current_path
-    const current_path = toPath.replace(new RegExp(`${deployDir}`), '');
+ function createTmpToHTML(fromPath, toPath, desJson, mdPath) {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const current_path = toPath.replace(new RegExp(`${deployDir}`), '');
+      const tmpStr = await FS.readFile(fromPath);
+      let mdPathName = '';
+      let mdhtml = '';
+      let relative_path = '';
+      if (mdPath) {
+        // CSS/JS 引用相对地址
+        relative_path = '../';
+        mdPathName = `/command/${desJson.n}.md`;
+        const READMESTR = await FS.readFile(path.resolve(mdPath, `${desJson.n}.md`));
+        mdhtml = await markdownToHTML(READMESTR.toString());
+      }
+      // 生成 HTML
+      let html = ejs.render(tmpStr.toString(), {
+        filename: fromPath,
+        relative_path, // 当前文件相对于根目录的相对路径
+        md_path: mdPathName || '',  // markdown 路径
+        mdhtml: mdhtml || '',
+        current_path,   // 当前 html 路径
+        describe: desJson ? desJson : {},   // 当前 md 的描述
+      }, {
+        filename: fromPath
+      });
 
-    // Read the content of the EJS template file
-    const tmpStr = await FS.readFile(fromPath);
-
-    // Initialize variables for Markdown-related data
-    let mdPathName = '';
-    let mdhtml = '';
-    let relative_path = '';
-
-    // Check if `mdPath` is provided (Markdown file is available)
-    if (mdPath) {
-      // Set `relative_path` to '../' to handle CSS/JS relative references
-      relative_path = '../';
-
-      // Construct the `mdPathName` by appending the Markdown file's name to '/command/'
-      mdPathName = `/command/${desJson.n}.md`;
-
-      // Read the content of the Markdown file and convert it to HTML using markdownToHTML function
-      const READMESTR = await FS.readFile(path.resolve(mdPath, `${desJson.n}.md`));
-      mdhtml = await markdownToHTML(READMESTR.toString());
+      await FS.outputFile(toPath, html);
+      console.log(`  ${'♻️  →'.green} ${path.relative(process.cwd(), toPath)}`);
+      resolve();
+    } catch (err) {
+      reject(err);
     }
-
-    // Generate HTML content by rendering the EJS template with provided data
-    let html = ejs.render(tmpStr.toString(), {
-      filename: fromPath,
-      relative_path, // Current file's relative path to the root directory
-      md_path: mdPathName || '',  // Markdown file path
-      mdhtml: mdhtml || '',
-      current_path,   // Current HTML path
-      describe: desJson ? desJson : {},   // Current MD description
-    }, {
-      filename: fromPath
-    });
-
-    // Write the generated HTML content to the specified output file (`toPath`)
-    await FS.outputFile(toPath, html);
-    
-    // Log a message to indicate the successful creation of the HTML file
-    console.log(`  ${'♻️  →'.green} ${path.relative(process.cwd(), toPath)}`);
-
-    // Resolve the Promise to indicate successful completion
-    resolve();
-  } catch (err) {
-    // Reject the Promise and handle any errors that occur during the process
-    reject(err);
-  }
+  });
 }
 
-
-/**
- * Convert Markdown to HTML with rewriting of links.
- * @param {String} str Markdown content
- */
 function markdownToHTML(str) {
   return create({
     rewrite: (node) => {
@@ -268,10 +241,11 @@ function markdownToHTML(str) {
 }
 
 /**
- * Generate CSS from Stylus.
- * @param {String} stylPath Stylus file path
+ * [createStylToCss 生成CSS]
+ * @param {[type]} stylPath stylus path
+ * @param {[type]} cssPath css path
  */
-function createStylToCss(stylPath) {
+ function createStylToCss(stylPath) {
   return new Promise((resolve, reject) => {
     try {
       const stylStr = FS.readFileSync(stylPath, 'utf8');
