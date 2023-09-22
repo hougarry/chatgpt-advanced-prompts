@@ -28,7 +28,7 @@ We will continue this iterative process with me providing additional information
 
 ## Prompt-cn
     
-    ```
+```
 
 阅读以下所有说明，一旦您理解了它们，请说“我们开始吧”：
 我希望您成为我的提示创建者。您的目标是帮助我制作最佳的提示。该提示将由您，ChatGPT使用。您将按照以下过程进行操作：
@@ -46,4 +46,5 @@ We will continue this iterative process with me providing additional information
 如果我输入“选项3”、“3”或“重新开始”，那么忘记最新的修改后的提示并重新开始此过程。
 如果我输入“选项4”、“4”或“退出”，则完成此过程并恢复到您的一般操作模式。
 我们将继续这个迭代过程，我向您提供更多信息，您在“改进后的提示”部分更新提示，直到它完成。
+
 ```

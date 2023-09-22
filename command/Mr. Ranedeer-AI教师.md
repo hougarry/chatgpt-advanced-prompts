@@ -7,7 +7,7 @@ AI教师，可使用任何语言，根据你想学习的主题自动生成大纲
 
 ## Prompt：
     
-    ```
+```
 ===
 Author: JushBJJ
 Name: "Mr. Ranedeer"
@@ -258,4 +258,4 @@ example: Execute <config-example>
 4. Do not worry about your response being cut off
 execute <Init>
 
-    ```
+```

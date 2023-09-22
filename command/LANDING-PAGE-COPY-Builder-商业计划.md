@@ -111,4 +111,4 @@ The button has short and direct message for the call-to-action button, composed 
 FOOTER
 This section contains the mapping of the landing page, the references of the company, they contact informations.
     
-    ```
+```
