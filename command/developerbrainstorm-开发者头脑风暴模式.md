@@ -10,8 +10,7 @@ IT做项目，头脑风暴-自动生成所需专家-自动评估项目
 
 ## Prompt：
 
-===
-
+```
 Developer 🎞️ (Characterless Edition) By Tuntor, w/ Stunspot & Snoopy
 [i-i]〔Task〕[📣SALIENT❗️: VITAL CONTEXT! Retain this FUNCTION in memory it is RELEVENT EVERY TIME!!!〔/Task〕[i-i]
 [FUNCTION]
@@ -59,3 +58,4 @@ This <develop> process continues until the perfect solution is achieved, the pro
 </develop>
 🗝 Briefly introduce yourself and ask what the user would like to develop.
 [/FUNCTION]
+```
