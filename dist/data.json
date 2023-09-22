@@ -132,7 +132,7 @@
   "html-programming-expert": {
     "n": "html-programming-expert",
     "p": "html-programming-expert",
-    "d": "html-programming,智能生成html代码,帮助你开发网页"
+    "d": "html-programming-expert,智能生成html代码,帮助你开发网页"
   },
   "midjourney-expert": {
     "n": "midjourney-expert",
@@ -140,5 +140,4 @@
     "d": "midjourney-expert,generate a mid-journey prompt for GPT"
   }
 
- 
 }
