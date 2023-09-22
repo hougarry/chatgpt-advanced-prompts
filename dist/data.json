@@ -129,10 +129,10 @@
     "p": "Jail-break-Dan-越狱模式",
     "d": "Jail-break-Dan-越狱模式,可以让你的GPT做任何事情"
   },
-  "html-programming": {
-    "n": "html-programming",
-    "p": "Jhtml-programming",
-    "d": "html-programming,智能生成html代码,帮助你解锁html模式"
+  "html-programming-expert": {
+    "n": "html-programming-expert",
+    "p": "html-programming-expert",
+    "d": "html-programming,智能生成html代码,帮助你开发网页"
   },
   "midjourney-expert": {
     "n": "midjourney-expert",
