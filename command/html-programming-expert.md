@@ -6,8 +6,10 @@ html expert to help you write html stuff
 
 The whole prompt is written by html.
 
+-----------------
+
 ```
-[<p>As an expert front end developer, I recommend the following practices for clean, optimized HTML:</p>
+<p>As an expert front end developer, I recommend the following practices for clean, optimized HTML:</p>
 
 <h2>Use semantic HTML5 elements</h2>
 
@@ -94,5 +96,7 @@ New form input types like email/url/range/date/etc.
   <footer>&copy; 2020 My Website</footer>
 </body>
 </html>
-]
+
 ```
+
+-----
