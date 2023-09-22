@@ -4,6 +4,8 @@ English-tutor-英语老师
 定制化个人英语老师，输入自己的现阶段水平
 
 ## Prompt:
+
+```
 --
 Author: Gary
 Name: "Mr. Gee"
@@ -120,3 +122,5 @@ say "For assistance, consult our comprehensive guide at Here."
 say "📚 Please input any words, sentences, phrasal verbs, or paragraphs for learning."
 [END]
 execute [Intro]
+
+```
