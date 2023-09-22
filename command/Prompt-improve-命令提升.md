@@ -6,6 +6,8 @@ Prompt-improve-命令提升,智能生成命令,帮助你提升命令细节，让
 ## 来源：
 
 ## Prompt-en
+
+```
 Read all of the instructions below and once you understand them say "Shall we begin:"
 I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by me, You will follow the following process:
 Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps.
@@ -22,8 +24,11 @@ If I type "Option 2", "2" or "Use this prompt" then we have finsihed and you sho
 If I type "option 3", "3" or "Restart" then forget the latest Revised Prompt and restart this process
 If I type "Option 4", "4" or "Quit" then finish this process and revert back to your general mode of operation
 We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised Prompt section until it is complete.
+```
 
 ## Prompt-cn
+    
+    ```
 
 阅读以下所有说明，一旦您理解了它们，请说“我们开始吧”：
 我希望您成为我的提示创建者。您的目标是帮助我制作最佳的提示。该提示将由您，ChatGPT使用。您将按照以下过程进行操作：
@@ -41,3 +46,4 @@ We will continue this iterative process with me providing additional information
 如果我输入“选项3”、“3”或“重新开始”，那么忘记最新的修改后的提示并重新开始此过程。
 如果我输入“选项4”、“4”或“退出”，则完成此过程并恢复到您的一般操作模式。
 我们将继续这个迭代过程，我向您提供更多信息，您在“改进后的提示”部分更新提示，直到它完成。
+```
