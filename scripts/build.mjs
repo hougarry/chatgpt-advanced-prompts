@@ -49,7 +49,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'index.html'),
       {
         p: '/index.html',
-        n: 'ChatGPT-advanced-prompts searching database',
+        n: '搜索',
         d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         command_length: jsonData.data.length
       }
@@ -60,7 +60,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'list.html'),
       {
         p: '/list.html',
-        n: 'Search',
+        n: '搜索',
         d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         command_length: jsonData.data.length
       }
@@ -71,8 +71,8 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'hot.html'),
       {
         p: '/hot.html',
-        n: 'Search',
-        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。。',
+        n: '搜索',
+        d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         arr: jsonData.data,
         command_length: jsonData.data.length
       }
@@ -88,7 +88,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
       path.resolve(deployDir, 'contributors.html'),
       {
         p: '/contributors.html',
-        n: 'Search',
+        n: '搜索',
         d: 'the database of Chatgpt-advanced-prompts，值得收藏的GPT高级命令数据库。',
         arr: jsonData.data,
         command_length: jsonData.data.length,
@@ -140,7 +140,7 @@ const contributorsPath = path.resolve(process.cwd(), 'CONTRIBUTORS.svg');
  * Ensures that the directory exists.
  * @param {String} pathArr
  */
-function createDataJSON(pathArr) {
+ function createDataJSON(pathArr) {
   return new Promise((resolve, reject) => {
     try {
       const commandData = {};
@@ -149,34 +149,24 @@ function createDataJSON(pathArr) {
         const json = {}
         const con = FS.readFileSync(mdPath);
         const str = con.toString();
-        let title;
-
-        // Try to match the title based on the existing format
-        const titleMatch = str.match(/[^===]+(?=[===])/g);
-        if (titleMatch && titleMatch[0]) {
-          title = titleMatch[0].replace(/\n/g, '').replace(/\r/, '');
-        } else {
-          // If the title doesn't match the expected format, use the file name as the title
-          title = path.basename(mdPath, '.md');
-        }
-
-        // Command or Prompt Name
+        let title = str.match(/[^===]+(?=[===])/g);
+        title = title[0] ? title[0].replace(/\n/g, '') : title[0];
+        title = title.replace(/\r/, '')
+        // 命令名称
         json["n"] = title;
-        // Command or Prompt Path
+        // 命令路径
         json["p"] = `/${path.basename(mdPath, '.md').replace(/\\/g, '/')}`;
-
-        // Command or Prompt Description
+        // 命令描述
         let des = str.match(/\n==={1,}([\s\S]*?)##/i);
         if (!des) {
-          throw `Invalid format: ${mdPath}`;
+          throw `格式错误: ${mdPath}`;
         }
         des = des[1] ? des[1].replace(/\n/g, '') : des[1];
         des = des.replace(/\r/g, '')
         json["d"] = des;
-
         indexes.push(json);
         commandData[title] = json;
-      });
+      })
       resolve({
         json: commandData,
         data: indexes
@@ -186,7 +176,6 @@ function createDataJSON(pathArr) {
     }
   });
 }
-
 
 /**
  * @param {String} fromPath ejs path
