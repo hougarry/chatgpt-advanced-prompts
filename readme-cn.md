@@ -143,10 +143,15 @@
 当使用本站时，代表您已接受了本站的使用条款和隐私条款。 ✅
 
 
-## 贡献
-
-
-
+## 参考项目及致谢
+我们要对以下平台及项目表示衷心的感谢:
+- [Discord](https://discord.com/)
+- [Reddit](https://www.reddit.com/)
+- [ChatGPt](https://chat.openai.com/)
+- [Githublinux-command](https://github.com/jaywcjlove/linux-command)
+- [awesome-chatgpt-zh](https://github.com/yzfly/awesome-chatgpt-zh)
+- [wonderful-prompts](https://github.com/yzfly/wonderful-prompts)
+- [LangGPT](https://github.com/yzfly/LangGPT)
 ## 许可证
 
 本项目采用 MIT 许可证。请参照仓库中的 `LICENSE` 文件了解更多信息。
