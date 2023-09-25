@@ -127,7 +127,7 @@ By using this site, you agree to its terms of use and privacy policy. ✅
 
 ## Thanks
 
-Thanks for platforms and projects that inpired this, below:
+Thanks for platforms and projects that inpired this, below as following:
 - [Discord](https://discord.com/)
 - [Reddit](https://www.reddit.com/)
 - [ChatGPt](https://chat.openai.com/)
