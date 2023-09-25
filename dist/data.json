@@ -138,6 +138,26 @@
     "n": "midjourney-expert",
     "p": "midjourney-expert",
     "d": "midjourney-expert,generate a mid-journey prompt for GPT"
+  },
+  "Prompt-engineer-Prompt工程师": {
+    "n": "Prompt-engineer-Prompt工程师",
+    "p": "Prompt-engineer-Prompt工程师",
+    "d": "Prompt-engineer-Prompt工程师, 智能生成命令,帮助你提升命令细节"
+  },
+  "Stable-Diffusion-Prompt-generator": {
+    "n": "Stable-Diffusion-Prompt-generator",
+    "p": "Stable-Diffusion-Prompt-generator",
+    "d": "Stable-Diffusion-Prompt-generator，help you generate prompt for Stable Diffusion"
+  },
+  "universal-prompt-engineer-通用工程师": {
+    "n": "universal-prompt-engineer-通用工程师",
+    "p": "universal-prompt-engineer-通用工程师",
+    "d": "universal-prompt-engineer-通用工程师，智能生成命令,帮助你提升命令细节"
+  },
+  "role-generator-角色生成": {
+    "n": "role-generator-角色生成",
+    "p": "role-generator-角色生成",
+    "d": "role-generator-角色生成,help you generate roles for GPT-"
   }
 
 }
