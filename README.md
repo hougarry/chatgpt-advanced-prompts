@@ -125,8 +125,16 @@ If you believe your copyright has been violated, please inform us. 💌
 
 By using this site, you agree to its terms of use and privacy policy. ✅
 
-## Contributing
+## Thanks
 
+Thanks for platforms and projects that inpired this, below:
+- [Discord](https://discord.com/)
+- [Reddit](https://www.reddit.com/)
+- [ChatGPt](https://chat.openai.com/)
+- [Githublinux-command](https://github.com/jaywcjlove/linux-command)
+- [awesome-chatgpt-zh](https://github.com/yzfly/awesome-chatgpt-zh)
+- [wonderful-prompts](https://github.com/yzfly/wonderful-prompts)
+- [LangGPT](https://github.com/yzfly/LangGPT)
 ## License
 
 This project is under the MIT License. Please refer to the `LICENSE` file in the repository for more information.
