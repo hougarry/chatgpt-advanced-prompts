@@ -158,6 +158,11 @@
     "n": "role-generator-角色生成",
     "p": "role-generator-角色生成",
     "d": "role-generator-角色生成,help you generate roles for GPT-"
+  },
+  "  Github Copilot Chat": {
+    "n": " Github Copilot Chat",
+    "p": " Github Copilot Chat",
+    "d": " Github Copilot Chat,help you correct your code "
   }
-
+ 
 }
