@@ -170,8 +170,8 @@ function indexOfCatch(a) {
       if (!arrResultHTML.length) {
         const noResultTipHTML = document.createElement("LI");
         const tipSpan = document.createElement("span")
-        const nullQueryStringTips = `请尝试输入一些字符，进行搜索！`
-        const undefinedQueryTips = `没有搜索到任何内容，请尝试输入其它字符！`
+        const nullQueryStringTips = `please input other keywords to search！`
+        const undefinedQueryTips = `there is nothing about your keywords, try some other keywords！`
         tipSpan.innerText = this.query ? undefinedQueryTips : nullQueryStringTips
         noResultTipHTML.appendChild(tipSpan);
         elm.appendChild(noResultTipHTML);
