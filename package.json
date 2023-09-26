@@ -32,7 +32,6 @@
     "sitemap-generator": "^8.5.1",
     "sqlite3": "5.0.8",
     "stylus": "^0.60.0",
-    "uglify-js": "^3.17.0",
-    "@uiw/github-corners": "~1.5.15"
+    "uglify-js": "^3.17.0"
   }
 }
