@@ -163,6 +163,21 @@
     "n": " Github Copilot Chat",
     "p": " Github Copilot Chat",
     "d": " Github Copilot Chat,help you correct your code "
+  },
+  "Code-assitant": {
+    "n": "Code-assitant",
+    "p": "Code-assitant",
+    "d": "Code-assitant,help you correct your code "
+  },
+  "Quicksliver-os": {
+    "n": "Quicksliver-os",
+    "p": "Quicksliver-os",
+    "d": "Quicksliver-os,like a operating system,help you do anything"
+  },
+  "Dalle3-prompt-imagine": {
+    "n": "Dalle3-prompt-imagine",
+    "p": "Dalle3-prompt-imagine",
+    "d": "Dalle3-prompt-imagine,help you generate prompt for Dalle3"
   }
  
 }
