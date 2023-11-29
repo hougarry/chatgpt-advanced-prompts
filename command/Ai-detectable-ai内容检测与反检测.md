@@ -8,9 +8,5 @@ AI 内容检测与如何反Ai检测
 
 
 ## Anti-AI-Detect
-https://undetectable.ai/
-
-https://www.gptinf.com/
-
-https://gpthero.me/obfuscator
+https://copyleaks.com/ai-content-detector
 
